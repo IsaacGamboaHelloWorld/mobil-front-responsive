@@ -1,0 +1,43 @@
+@import '@/sass/mixins.sass'
+
+.container
+    &-paginator
+        +flex(flex, center, center, row)
+    &-mobile
+        display: none
+    &-pages
+        +flex(flex, center, center, row)
+        gap: 8px
+    &-page-selector
+        +flex(flex, center, center)
+        height: 48px
+        width: 48px
+        background-color: $main-color-neutral-light-200
+        color: $main-color-neutral-dark-300
+        cursor: pointer
+        user-select: none
+        outline: none
+        border: none
+        border-radius: 6px
+        &.selected
+            &.bpop
+                background-color: $bpop-color-semantic-green-100
+            &.bavv
+                background-color: $bavv-color-secondary-100
+            &.bbog
+                background-color: $bbta-color-primary-100
+            &.bocc
+                background-color: $bocc-color-primary-200
+@include mobile
+    .container
+        &-pages
+            display: none
+        &-mobile
+            display: block
+
+@include tablet
+    .container
+        &-pages
+            display: none
+        &-mobile
+            display: block

@@ -1,0 +1,73 @@
+@import '@/sass/typography.sass'
+.container-icon
+    position: relative
+    .icon
+        background-color: none
+        border-radius: 50px
+        padding: 8px
+        &.bpop
+            color: $bpop-color-primary-400
+            &.active
+                background-color: $bpop-color-primary-400
+                color: $bpop-color-neutral-light-100
+            &:disabled
+                background-color: $bpop-color-neutral-dark-200
+                color: $bpop-color-neutral-light-100
+                cursor: inherit
+                border: none
+        &.bavv
+            color: $bavv-color-secondary-500
+            &.active
+                background-color: $bavv-color-secondary-500
+                color: $bpop-color-neutral-light-100
+            &:disabled
+                background-color: $bavv-color-neutral-dark-200
+                color: $bavv-color-neutral-light-100
+                cursor: inherit
+                border: none
+        &.bbog
+            color: $bbta-color-primary-500
+            &.active
+                background-color: $bbta-color-primary-500
+                color: $bpop-color-neutral-light-100
+            &:disabled
+                background-color: $bbta-color-neutral-dark-200
+                color: $bbta-color-neutral-light-100
+                cursor: inherit
+                border: none
+        &.bocc
+            color: $bocc-color-primary-400
+            &.active
+                background-color: $bocc-color-primary-400
+                color: $bpop-color-neutral-light-100
+            &:disabled
+                background-color: $bocc-color-neutral-dark-200
+                color: $bocc-color-neutral-light-100
+                cursor: inherit
+                border: none
+
+    .selector
+        z-index: 2
+        border: 1px solid $main-color-neutral-dark-200
+        border-radius: 6px
+        position: absolute
+        padding: 16px 0px
+        color: $main-color-neutral-dark-200
+        background: $main-color-neutral-light-100
+        width: fit-content
+        height: auto
+
+        &.up
+            bottom: 50px
+            left: 0
+
+        &.down
+            top: 50px
+            left: 0
+        li
+            padding: 10px 16px
+            &:hover
+                background: $main-color-semantic-green-100
+                cursor: pointer
+        @media print
+            display: none

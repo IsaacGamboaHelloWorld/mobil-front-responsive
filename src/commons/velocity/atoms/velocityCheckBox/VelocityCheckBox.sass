@@ -1,0 +1,74 @@
+.container
+    display: block
+    position: relative
+    padding-left: 35px
+    cursor: pointer
+    font-size: 22px
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+
+    & input
+        position: absolute
+        opacity: 0
+        cursor: pointer
+        height: 0
+        width: 0
+
+.checkmark
+    position: absolute
+    top: -9px
+    left: 0
+    height: 16px
+    width: 16px
+    background-color: #eee
+    border: 1px solid $main-color-neutral-dark-100
+    border-radius: 6px
+
+    .container:hover input ~ &
+        background-color: white
+        border: 1px solid $main-color-neutral-dark-100
+        border-radius: 6px
+
+    .container-bavv input:checked ~ &
+        border: none
+        background-color: $main-color-semantic-blue-400
+    .container-bpop input:checked ~ &
+        border: none
+        background-color: $main-color-semantic-green-400
+    .container-bbog input:checked ~ &
+        border: none
+        background-color: $main-color-semantic-blue-400
+    .container-bocc input:checked ~ &
+        border: none
+        background-color: $main-color-semantic-blue-400
+
+    &:after
+        content: ""
+        position: absolute
+        display: none
+
+    .container input:checked ~ &:after
+        display: block
+
+    .container-line &:after
+        left: 6px
+        top: 3.5px !important
+        width: 3px
+        height: 7px
+        border: solid white
+        border-width: 0 1px 0 0 !important
+        -webkit-transform: rotate(90deg) !important
+        -ms-transform: rotate(90deg) !important
+        transform: rotate(90deg) !important
+    .container &:after
+        left: 6px
+        top: 3px
+        width: 3px
+        height: 7px
+        border: solid white
+        border-width: 0 1px 1px 0
+        -webkit-transform: rotate(45deg)
+        -ms-transform: rotate(45deg)
+        transform: rotate(45deg)

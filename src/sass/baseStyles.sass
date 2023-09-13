@@ -1,0 +1,226 @@
+@import '@/sass/typography.sass'
+@import '@/sass/mixins.sass'
+::-webkit-scrollbar
+    width: 8px
+
+::-webkit-scrollbar-thumb
+    background: $main-color-neutral-dark-100
+    border-radius: 21px
+    height: 188px
+
+.separator-line
+    background-color: $main-color-neutral-light-400
+    border: none
+    height: 1px
+.color-neutral
+    color: $main-color-neutral-dark-300
+.color-dark-400
+    color: $main-color-neutral-dark-400
+
+.text-aling
+    &-center
+        text-align: center
+    &-left
+        text-align: left
+    &-rigth
+        text-align: right
+    &-end
+        text-align: end
+.overlay
+    position: absolute
+    z-index: 1
+    background: rgba(37, 43, 49, 0.7)
+    width: 100vh
+    height: 100vh
+    top: 0
+    right: 0
+.w-100
+    width: 100%
+
+.m-a
+    margin: auto
+.m-x-a
+    margin: 0px auto
+.m-y-a
+    margin: auto 0px
+
+ul,li
+    list-style-type: none
+
+i
+    @extend .vel-text-heading-5
+
+.responsive
+    &-show
+        display: none !important
+    &-hidde
+        display: flex !important
+
+.vel-table
+    background: white
+    border-radius: 6px
+    border: 1px solid $main-color-neutral-light-400
+
+    .vel-table_row
+        border-bottom: 1px solid $main-color-neutral-light-400
+        &.vel-table_header
+            background: $main-color-semantic-blue-100
+            max-width: 100%
+            +flex(flex,center,space-between,row)
+            box-sizing: border-box
+
+            .vel-table_col
+                +flex(flex,center,flex-start,row)
+
+                p
+                    text-overflow: ellipsis
+                    overflow-x: hidden
+
+                i
+                    font-size: 15px
+                    margin-left: 17px
+                    cursor: pointer
+                .header-subtitle
+                    position: absolute
+
+        .row
+            width: 95%
+            +flex(flex,center,center,row)
+            box-sizing: border-box
+
+    .vel-table_col
+        padding: 24px 8px
+        flex: 1 1 0
+        text-overflow: ellipsis
+        overflow-x: hidden
+        box-sizing: border-box
+        >p
+            text-overflow: ellipsis
+            overflow-x: hidden
+            box-sizing: border-box
+            white-space: nowrap
+
+        &.check
+            flex: 0.2
+
+    .vel-table_detail
+        background: $main-color-neutral-light-200
+
+// miga de pan
+.breadcrumb-trail
+    +flex(flex,center,flex-start,row)
+    gap: 16px
+    @media print
+        display: none
+    i
+        font-size: 20px
+        color: $main-color-neutral-dark-300
+        cursor: pointer
+        &.row
+            font-size: 12px
+            cursor: auto
+    p
+        &.bpop
+            color: $main-color-semantic-green-400
+        &.bavv
+            color: $main-color-semantic-blue-400
+        &.bocc
+            color: $main-color-semantic-blue-400
+        &.bbog
+            color: $main-color-semantic-blue-400
+
+@include tablet-landscape
+    .vel-table
+        .vel-table_col
+            &.check
+                flex: 0.5
+@include tablet
+    .responsive
+        &-show
+            display: flex !important
+        &-hidde
+            display: none !important
+
+    .vel-table
+        .vel-table_row
+            .row
+                flex-direction: column
+                width: 100%
+                box-sizing: border-box
+                padding: 8px
+
+            &.vel-table_header
+                .row
+                    box-sizing: border-box
+                    flex-direction: row
+                    justify-content: flex-start
+                    width: 100%
+                    .vel-table_col
+                        padding: 24px 0px
+                        max-width: 50%
+                        &.check
+                            width: 10%
+
+        .vel-table_col
+            overflow-y: hidden
+            overflow-x: hidden
+            box-sizing: border-box
+            display: flex
+            width: 100%
+            flex: none
+            padding: 0px
+            margin-bottom: 12px
+
+            &.check
+                padding: 24px 0px
+                flex: none
+            >p,div
+                width: 50%
+                box-sizing: border-box
+
+        // .container-button
+        //     display: none !important
+
+@include mobile
+    .responsive
+        &-show
+            display: flex !important
+        &-hidde
+            display: none !important
+
+    .vel-table
+        .vel-table_row
+            .row
+                flex-direction: column
+                width: 100%
+                box-sizing: border-box
+                padding: 8px
+
+            &.vel-table_header
+                .row
+                    box-sizing: border-box
+                    flex-direction: row
+                    justify-content: flex-start
+                    width: 100%
+                    .vel-table_col
+                        padding: 24px 0px
+                        max-width: 50%
+                        &.check
+                            width: 10%
+
+        .vel-table_col
+            overflow-y: hidden
+            overflow-x: hidden
+            box-sizing: border-box
+            display: flex
+            width: 100%
+            flex: none
+            padding: 0px
+            margin-bottom: 12px
+
+            &.check
+                padding: 24px 0px
+                flex: none
+            >p,div
+                width: 50%
+                box-sizing: border-box

@@ -1,0 +1,49 @@
+@import '@/sass/mixins.sass'
+
+.container
+    &-main
+        background-color: $main-color-neutral-light-100
+        border: 1px solid $main-color-neutral-light-400
+        border-radius: 6px
+    &-label
+        padding: 18px 16px
+    &-selectors
+        +flex(flex, inherit, inherit, row)
+        gap: 16px
+        padding: 0px 16px 40px
+        flex-wrap: wrap
+        >div
+            min-width: 158px
+            width: 30%
+
+    &-product
+        display: inline-block
+        .product
+            color: $main-color-neutral-dark-300
+    &-buttons
+        +flex(flex, center, flex-end, row)
+
+.temp-date-container
+    +flex(flex, center, space-between, row)
+    position: relative
+    padding: 0px 8px
+    border: 1px solid $main-color-neutral-dark-200
+    border-radius: 6px
+    width: 330px
+    height: 36px
+    color: $main-color-neutral-dark-100
+    box-sizing: border-box
+    i
+        color: $main-color-neutral-dark-300
+
+@include mobile
+    .container-selectors
+        +flex(flex, center, inherit, column)
+        >div
+            width: 100%
+
+@include tablet-mini
+    .container-selectors
+        +flex(flex, center, inherit, column)
+        >div
+            width: 100%

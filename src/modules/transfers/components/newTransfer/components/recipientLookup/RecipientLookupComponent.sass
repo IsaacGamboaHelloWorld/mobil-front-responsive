@@ -1,0 +1,47 @@
+@import '@/sass/mixins.sass'
+.container
+    &-modal
+        border: 1px solid $main-color-semantic-blue-400
+        border-radius: 6px
+        min-width: 343px
+        .searcher
+            box-sizing: border-box
+            padding: 0px 16px 24px 16px
+            width: 50%
+    &-header
+        +flex(flex, inherit, space-between, row)
+        gap: 16px
+        width: 100%
+        padding: 16px 18px
+        box-sizing: border-box
+    &-records
+        overflow-y: scroll
+        scroll-behavior: smooth
+.icon
+    cursor: pointer
+    user-select: none
+    outline: none
+.bpop
+    color: $bpop-color-semantic-green-400
+.bavv
+    color: $bavv-color-semantic-blue-400
+.bbog
+    color: $bbta-color-semantic-blue-400
+.bocc
+    color: $bocc-color-semantic-blue-400
+
+.vel-table_row
+    +flex(flex, center, inherit, row)
+
+p
+    text-align: left
+
+@include mobile
+    .container-modal
+        .searcher
+            width: 100%
+
+@include tablet
+    .container-modal
+        .searcher
+            width: 100%

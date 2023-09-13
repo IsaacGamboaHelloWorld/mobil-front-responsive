@@ -1,0 +1,23 @@
+@import '@/sass/mixins.sass'
+@import '@/sass/typography.sass'
+
+.container
+    +flex(flex,center,space-between,row)
+    flex-wrap: wrap !important
+    overflow: auto
+    &-information
+        width: 70%
+        p
+            word-wrap: break-word
+        .btn-forgot-password
+            border: none
+            background: none
+            color: $main-color-semantic-blue-400
+            cursor: pointer
+            @extend .vel-text-small,.vel-text-semibold
+            padding: 8px 12px
+
+    &-img
+        width: 20%
+        img
+            width: 100%

@@ -1,0 +1,27 @@
+@import '@/sass/mixins.sass'
+.container
+    &-menu
+        border: 1px solid $main-color-neutral-light-400
+        background-color: $main-color-neutral-light-100
+        padding: 18px 16px 24px 16px
+        border-radius: 6px
+    &-dropdowns
+        +flex(flex, inherit, inherit, row)
+        gap: 16px
+    &-calendar
+        width: 50%
+    &-check
+        +flex(flex, inherit, inherit, row)
+
+@include mobile
+    .container
+        &-dropdowns
+            flex-direction: column
+        &-calendar
+            width: 100%
+@include tablet
+    .container
+        &-dropdowns
+            flex-direction: column
+        &-calendar
+            width: 100%

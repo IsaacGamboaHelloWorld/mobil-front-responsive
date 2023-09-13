@@ -1,0 +1,40 @@
+@import '@/sass/mixins.sass'
+
+.service
+    padding: 8px
+    color: $main-color-neutral-dark-200
+    border-radius: 6px
+    &:hover,&.active
+        cursor: pointer
+        &.bpop
+            color: $main-color-neutral-dark-400
+            background: $bpop-color-semantic-green-100
+            p i
+                color: $bpop-color-primary-300
+        &.bavv
+            color: $main-color-neutral-dark-400
+            background: $bavv-color-semantic-blue-100
+            p i
+                color: $bavv-color-secondary-400
+
+        &.bbog
+            color: $main-color-neutral-dark-400
+            background: $bbta-color-semantic-blue-100
+            p i
+                color: $bbta-color-primary-400
+        &.bocc
+            color: $main-color-neutral-dark-400
+            background: $bocc-color-semantic-blue-100
+            p i
+                color: $bocc-color-primary-300
+
+@include mobile
+    .service
+        width: 100%
+        box-sizing: border-box
+        +flex(flex,center,flex-star,row)
+        p
+            text-align: left
+            margin: 0
+        p i
+            margin-right: 18px

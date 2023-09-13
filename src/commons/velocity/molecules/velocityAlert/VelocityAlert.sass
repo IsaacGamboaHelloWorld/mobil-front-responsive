@@ -1,0 +1,49 @@
+@import '@/sass/mixins.sass'
+.container-
+    &alert
+        +flex(flex, center, space-between, row)
+        border: 1px solid
+        border-radius: 4px
+        padding: 16px
+        >div
+            +flex(flex, center, inherit, row)
+        .line
+            opacity: 25%
+            margin: 16px 0px
+    &icon
+        &-right
+            align-self: center
+            font-size: 12px
+            cursor: pointer
+            user-select: none
+            outline: none
+            &.flex-start
+                align-self: flex-start
+        &-left
+            font-size: 20px
+            user-select: none
+            outline: none
+
+.blue
+    background-color: $main-color-semantic-blue-100
+    border-color: $main-color-semantic-blue-200
+    .icon
+        color: $main-color-semantic-blue-400
+.green
+    background-color: $main-color-semantic-green-100
+    border-color: $main-color-semantic-green-200
+    .icon
+        color: $main-color-semantic-green-400
+.red
+    background-color: $main-color-semantic-red-100
+    border-color: $main-color-semantic-red-200
+    .icon
+        color: $main-color-semantic-red-400
+.yellow
+    background-color: $main-color-semantic-yellow-100
+    border-color: $main-color-semantic-yellow-200
+    .icon
+        color: $main-color-semantic-yellow-400
+
+.icon-icon-close
+    font-size: 10px

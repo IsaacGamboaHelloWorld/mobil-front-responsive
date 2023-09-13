@@ -1,0 +1,58 @@
+@import '@/sass/mixins.sass'
+@import '@/sass/typography.sass'
+
+.container
+    &-resume
+        background-color: $main-color-neutral-light-100
+        border: 1px solid $main-color-neutral-light-400
+        border-bottom: 0px
+        border-top-left-radius: 6px
+        border-top-right-radius: 6px
+        padding: 18px 16px
+    &-button
+        +flex(flex, inherit, inherit, row)
+    &-icons
+        +flex(flex, center, flex-end, row)
+
+.vel-table
+    border-top-left-radius: 0px
+    border-top-right-radius: 0px
+i
+    cursor: pointer
+.icon
+    &-bpop
+        color: $bpop-color-primary-400
+    &-bbog
+        color: $main-color-semantic-blue-400
+    &-bavv
+        color: $main-color-semantic-blue-400
+    &-bocc
+        color: $main-color-semantic-blue-400
+
+.container_detail
+    padding: 16px
+    &_cols
+        +flex(flex, inherit, inherit, row)
+        .col
+            width: 50%
+            .value
+                +flex(flex, inherit, inherit, row)
+                p
+                    width: 50%
+                    @extend .vel-text-small
+                    margin-bottom: 12px
+                    text-overflow: ellipsis
+                    overflow-x: hidden
+
+@include mobile
+    .container_detail
+        &_cols
+            flex-direction: column
+            .col
+                width: 100%
+@include tablet
+    .container_detail
+        &_cols
+            flex-direction: column
+            .col
+                width: 100%

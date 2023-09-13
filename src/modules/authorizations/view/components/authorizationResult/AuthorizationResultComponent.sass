@@ -1,0 +1,72 @@
+@import '@/sass/mixins.sass'
+.container
+    &-main
+        padding: 0px 24px 56px 24px
+
+    &-header
+        +flex(flex, center, space-between, row)
+        margin: 28px 0px
+    &-accordion
+        background-color: $main-color-neutral-light-100
+        border: 1px solid $main-color-neutral-light-400
+        border-radius: 6px
+        &-header
+            +flex(flex, center, space-between, row)
+            margin: 18px 16px
+            margin-right: 0px
+        &-body
+            +flex(flex, inherit, inherit, row)
+            flex-direction: row
+            margin: 16px
+            width: 100%
+    &-column
+        width: 50%
+    &-special-detail
+        >div
+            padding: 16px
+            box-sizing: border-box
+    &-data
+        +flex(flex, center, inherit, row)
+
+    &-sign
+        padding: 4px 8px
+        border-radius: 4px
+
+.approved
+    color: $main-color-semantic-green-200
+    background-color: $main-color-semantic-green-100
+    border: 1px solid $main-color-semantic-green-200
+.error
+    color: $main-color-semantic-red-200
+    background-color: $main-color-semantic-red-100
+    border: 1px solid $main-color-semantic-red-200
+.alert
+    border-radius: 0px
+    border-left: 0px
+    border-right: 0px
+
+@include mobile
+    .container
+        &-header
+            +flex(flex, inherit, inherit, column)
+            gap: 24px
+        &-accordion
+            &-body
+                flex-direction: column
+        &-column
+            width: 100%
+    .separator
+        margin-top: 12px
+
+@include tablet
+    .container
+        &-header
+            +flex(flex, inherit, inherit, column)
+            gap: 24px
+        &-accordion
+            &-body
+                flex-direction: column
+        &-column
+            width: 100%
+    .separator
+        margin-top: 12px

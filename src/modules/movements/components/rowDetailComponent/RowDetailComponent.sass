@@ -1,0 +1,23 @@
+@import '@/sass/mixins.sass'
+@import '@/sass/typography.sass'
+
+.container_detail
+    padding: 16px
+    &_cols
+        +flex(flex, inherit, inherit, row)
+        .col
+            .value
+                +flex(flex, inherit, inherit, row)
+                p
+                    width: 50%
+                    @extend .vel-text-small
+                    margin-bottom: 12px
+                    text-overflow: ellipsis
+                    overflow-x: hidden
+
+@include mobile
+    .container
+        &-body
+            +flex(flex, inherit, inherit, column)
+        &-item
+            width: 100%

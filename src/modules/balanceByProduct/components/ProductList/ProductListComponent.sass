@@ -1,0 +1,13 @@
+@import '@/sass/mixins.sass'
+.container
+    &-main
+        box-sizing: border-box
+    &-filters
+        +flex(flex, center, inherit, row)
+        gap: 16px
+@include mobile
+    .container-filters
+        flex-direction: column
+@include tablet
+    .container-filters
+        flex-direction: column

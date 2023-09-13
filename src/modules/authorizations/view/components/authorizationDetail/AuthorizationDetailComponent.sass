@@ -1,0 +1,38 @@
+@import '@/sass/mixins.sass'
+.container
+    &_title
+        +flex(flex,center,space-between,row)
+    &_detail
+        +flex(flex,flex-start,flex-start,column)
+        flex-wrap: wrap
+        background: $main-color-neutral-light-100
+        border: 1px solid $main-color-neutral-light-400
+        border-radius: 6px
+        padding: 16px
+        height: 300px
+        box-sizing: border-box
+        overflow: hidden
+        .detail
+            +flex(flex,center,flex-start,row)
+
+@include tablet-landscape
+    .container
+        &_detail
+            height: 400px
+
+@include tablet
+    .container
+        &_detail
+            height: 600px
+
+@include mobile
+    .container
+        &_title
+            +flex(flex,flex-start,space-between,column)
+            .container-button
+                width: 100%
+                margin: 16px 0px
+        &_detail
+            height: 100%
+            .detail
+                width: 100% !important

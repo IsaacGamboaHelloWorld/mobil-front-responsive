@@ -1,0 +1,18 @@
+@import '@/sass/mixins.sass'
+.card_component
+    border: solid 1px $main-color-neutral-light-400
+    border-radius: 6px
+    background: $main-color-neutral-light-100
+    &_body
+        +flex(flex,center,space-between,row)
+        padding: 16px
+    &_header
+        +flex(flex,center,space-between,row)
+        border-bottom: solid 1px $main-color-neutral-light-400
+        padding: 18px 16px
+
+@include mobile
+    .card_component
+        &_body
+            +flex(flex,flex-start,space-between,column)
+            gap: 16px

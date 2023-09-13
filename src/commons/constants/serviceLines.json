@@ -1,0 +1,45 @@
+
+
+
+{
+    "SERVICE-LINES-BUSINESS":{
+        "BPOP":{
+            "BOGOTA":"743 4646  opción 3",
+            "NACIONAL":"01 8000 18 46 46"
+        },
+        "BBOG":{
+            "BOGOTA":"3 647 400",
+            "CALI":"8 984 949",
+            "MEDELLIN":"5 767 680",
+            "BARRANQUILLA":"3 711 400",
+            "BUCARAMANGA":"6 475 050"
+        },
+        "BOCC":{
+            "BOGOTA":"(601) 390 20 58",
+            "CALI":"(602) 485 11 13",
+            "MEDELLIN":"(604) 605 20 20",
+            "BARRANQUILLA":"(605) 386 97 72",
+            "NACIONAL":"018000514652"
+        },
+        "BAVV":{
+            "BOGOTA":"(601) 4441777",
+            "CALI":"(602) 8859595",
+            "MEDELLIN":"(604) 3256000",
+            "BARRANQUILLA":"(605) 3304330",
+            "NACIONAL":"01 8000 51 8000",
+            "BUCARAMANGA":"607) 6302980"
+
+        }
+        
+    },
+    "SERVICE-LINES-CUSTOMER":{
+        "BPOP":{
+            "BOGOTA":"743 4646  opción 3",
+            "NACIONAL":"01 8000 18 46 46"
+        },
+        "BBOG":{
+            "NACIONAL":"601 3320101"
+        }
+      
+    }
+}

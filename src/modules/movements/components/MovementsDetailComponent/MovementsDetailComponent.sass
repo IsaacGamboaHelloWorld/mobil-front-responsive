@@ -1,0 +1,34 @@
+@import '@/sass/mixins.sass'
+@import '@/sass/typography.sass'
+
+.container_parameters
+    background: $main-color-neutral-light-100
+    border-radius: 6px
+    border: solid 1px $main-color-neutral-light-400
+    padding: 16px
+    +flex(flex, inherit, inherit, row)
+    .value
+        +flex(flex, inherit, inherit, row)
+        p
+            width: 50%
+            @extend .vel-text-small
+            margin-bottom: 12px
+            text-overflow: ellipsis
+            overflow-x: hidden
+.container_title
+    +flex(flex, center, space-between, row)
+
+@include mobile
+    .container_title
+        width: 100%
+        +flex(flex, flex-start, space-between, column)
+        >div
+            width: 100%
+            margin-top: 18px
+@include tablet-mini
+    .container_title
+        width: 100%
+        +flex(flex, flex-start, space-between, column)
+        >div
+            width: 100%
+            margin-top: 18px

@@ -1,0 +1,42 @@
+@import '@/sass/mixins.sass'
+.container
+    &-main
+        position: absolute
+        right: 0px
+        top: 94px
+        @media print
+            display: none
+    &-icon
+        +flex(flex, center, center)
+        cursor: pointer
+        user-select: none
+        outline: none
+        letter-spacing: normal
+        height: 44px
+        width: 56px
+        border-radius: 6px 0px 0px 6px
+        .whatsapp-logo
+            height: 24px
+            width: 24px
+    &-circle
+        +flex(flex, center, center)
+        height: 32px
+        width: 32px
+        background-color: $main-color-neutral-light-100
+        border-radius: 100px
+        .icon
+            font-size: 18px
+
+.whatsapp
+    background-color: $main-color-semantic-green-100
+    color: $main-color-semantic-green-400
+.desktop
+    background-color: $main-color-semantic-yellow-100
+    color: $main-color-semantic-yellow-400
+.bookmark
+    background-color: $main-color-semantic-blue-100
+    color: $main-color-semantic-blue-400
+
+@include mobile
+    .container-main
+        display: none

@@ -1,0 +1,24 @@
+@import '@/sass/mixins.sass'
+
+.container
+    &_detail
+        padding: 16px
+        >div
+            +flex(flex, flex-start, center, row)
+
+        .detail_col
+            .detail
+                margin-bottom: 12px
+                +flex(flex, space-between, center, row)
+                p
+                    text-overflow: ellipsis
+                    overflow-x: hidden
+                    white-space: nowrap
+
+@include mobile
+    .container
+        &_detail
+            >div
+                +flex(flex, flex-start, center, column)
+            .detail_col
+                width: 100% !important

@@ -1,0 +1,42 @@
+@import '@/sass/mixins.sass'
+
+.icon-header
+    +flex(flex, center, center, inherit)
+    transition: .3s
+    height: 32px
+    width: 32px
+    cursor: pointer
+    user-select: none
+    outline: none
+    letter-spacing: normal
+    border-radius: 100px
+    font-size: 15px
+    color: $main-color-neutral-dark-300
+    &.bpop
+        &.active
+            background-color: $bpop-color-primary-100
+            color: $bpop-color-primary-400
+    &.bavv
+        &.active
+            background-color: $bavv-color-secondary-200
+            color: $bavv-color-secondary-500
+    &.bbog
+        &.active
+            background-color: $bbta-color-primary-200
+            color: $bbta-color-primary-500
+    &.bocc
+        &.active
+            background-color: $bocc-color-primary-200
+            color: $bocc-color-primary-400
+
+.icon-general
+    +flex(flex, center, center, inherit)
+    font-size: 20px
+    border-radius: 0px
+    cursor: pointer
+    user-select: none
+    outline: none
+    letter-spacing: normal
+    color: $main-color-neutral-dark-300
+    &.small
+        font-size: 15px

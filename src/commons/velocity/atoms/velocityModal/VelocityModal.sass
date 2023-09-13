@@ -1,0 +1,27 @@
+@import '@/sass/mixins.sass'
+.modal-overlay
+    +flex(flex,center,center,row)
+    background: $main-color-overlay-70
+    width: 100%
+    height: 100%
+    position: fixed
+    z-index: 4
+    box-sizing: border-box
+    top: 0
+    left: 0
+    position: fixed
+    &.bbog
+        background: $bbta-color-overlay-70 !important
+
+    &.spinner
+        z-index: 100 !important
+    &.close
+        display: none
+    .container_body
+        width: auto
+        height: auto
+        text-align: center
+        background-color: white
+        padding: 0
+        border-radius: 6px
+        box-sizing: border-box

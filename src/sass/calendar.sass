@@ -1,0 +1,98 @@
+@import './mixins.sass'
+@import './typography.sass'
+$dp__font_family: 'Inter' !important
+$dp__border_radius: 0px !default
+$dp__cell_border_radius: $dp__border_radius !default // Specific border radius for the calendar cell
+
+// Transitions
+$dp__transition_length: 22px !default // Passed to the translateX in animation
+$dp__transition_duration: 0.1s !default // Transition duration
+
+// Sizing
+$dp__button_height: 48px !important // size for buttons in overlays
+$dp__month_year_row_height: 35px !important // height of the month-year select row
+$dp__month_year_row_button_size: 25px !important // Specific height for the next/previous buttons
+$dp__button_icon_height: 20px !important // icon sizing in buttons
+$dp__cell_size: 48px !important // width and height of calendar cell
+$dp__cell_padding: 5px !important // padding in the cell
+$dp__common_padding: 10px !important
+$dp__input_padding: 6px 12px !important // padding in the input
+$dp__input_icon_padding: 48px !important // Padding on the left side of the input if icon is present
+$dp__menu_min_width: 260px !important // Adjust the min width of the menu
+$dp__action_buttons_padding: 2px 5px !important // Adjust padding for the action buttons in action row
+$dp__row_margin: 5px 0 !important // Adjust the spacing between rows in the calendar
+$dp__calendar_header_cell_padding: 0.5rem !important // Adjust padding in calendar header cells
+$dp__two_calendars_spacing: 10px !important // Space between two calendars if using two calendars
+$dp__overlay_col_padding: 3px !important // Padding in the overlay column
+$dp__time_inc_dec_button_size: 32px !important // Sizing for arrow buttons in the time picker
+
+// Font sizes
+$dp__font_size: 16px !important // overall font-size
+$dp__preview_font_size: 0.8rem !important // font size of the date preview in the action row
+$dp__time_font_size: 16px !important // font size in the time picker
+
+.dp__main
+    border: none !important
+    .dp__outer_menu_wrap
+        .dp__menu
+            border: none !important
+.dp__calendar
+    margin-top: 8px
+.dp__calendar
+    &.dp__calendar_next
+        margin-left: 0px
+
+.dp__flex_display
+    width: 100% !important
+    box-sizing: border-box
+    justify-content: space-between
+    >.dp__instance_calendar
+        width: 47% !important
+
+.dp__selection_preview
+    display: none !important
+
+.dp__preset_ranges
+    width: 138px
+
+.dp__cell_inner,.dp__calendar_header_item
+    width: 48px
+    height: 48px
+.dp__calendar_header_item
+    @extend .vel-text-semibold
+
+.dp__month_year_select
+    border: 1px solid $main-color-neutral-light-500
+    margin: 5px
+.dp__action_row
+    flex-direction: row-reverse
+    justify-content: flex-start
+    width: 100% !important
+.dp__month_year_col_nav
+    border: none
+.bpop
+    .dp__range_start,.dp__range_end,.dp__overlay_cell_active
+        background: $bpop-color-semantic-green-400
+    .dp__today
+        border-color: $bpop-color-semantic-green-400
+    .dp__range_between
+        background: $bpop-color-semantic-green-100
+
+@include mobile
+    .dp__flex_display
+        >.dp__instance_calendar
+            width: 100% !important
+
+    .dp__menu_content_wrapper
+        display: flex
+        flex-direction: column-reverse
+    .dp__preset_ranges
+        width: 100%
+    .dp__action_row
+        width: 100% !important
+        box-sizing: border-box
+        display: flex !important
+        flex-direction: column !important
+        gap: 20px
+        >div
+            width: 100% !important

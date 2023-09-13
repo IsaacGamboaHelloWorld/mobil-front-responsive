@@ -1,0 +1,47 @@
+@import '@/sass/mixins.sass'
+.card
+    border: 1px solid $main-color-neutral-light-400
+    border-radius: 6px
+    background: $main-color-neutral-light-100
+    &_header
+        padding: 16px
+        border-bottom: 1px solid $main-color-neutral-light-400
+        border-radius: 6px
+    &_body
+        padding: 16px
+        >div
+            +flex(flex,center,center,row)
+ul,li
+    list-style-type: disc
+.container_permitions
+    background: $main-color-neutral-light-100
+    width: 100%
+    border: 1px solid $main-color-neutral-light-400
+    border-radius: 6px
+    padding: 18px
+    +flex(flex,center,flex-start,row)
+    flex-wrap: wrap
+    margin-bottom: 10px
+    box-sizing: border-box
+    li
+        margin-left: 18px
+        width: 30%
+        box-sizing: border-box
+
+@include mobile
+    .container_permitions
+        width: 95%
+        li
+            width: 100%
+
+@include tablet-mini
+    .container_permitions
+        width: 95%
+        li
+            width: 45%
+
+@include tablet
+    .container_permitions
+        width: 95%
+        li
+            width: 45%

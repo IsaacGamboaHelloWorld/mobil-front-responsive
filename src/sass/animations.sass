@@ -1,0 +1,50 @@
+@keyframes fadeInLeft
+    0%
+        opacity: 0
+        transform: translate3d(-30px, 0, 0)
+
+    100%
+        opacity: 1
+        transform: none
+@keyframes fadeInDownTable
+    0%
+        opacity: 0
+        transform: translate3d(0, -10px, 0)
+
+    100%
+        opacity: 1
+        transform: none
+
+@keyframes fadeInDown
+    0%
+        opacity: 0
+        transform: translate3d(0, -10px, 0)
+
+    100%
+        opacity: 1
+        transform: none
+
+@keyframes hidden
+    0%
+        opacity: 1
+        transform: translate3d(-30px, 0, 0)
+
+    100%
+        opacity: 0
+        transform: none
+
+.fade-in-down-table
+    animation-name: fadeInDownTable
+    animation-duration: .3s
+
+.fade-in-left
+    animation-name: fadeInLeft
+    animation-duration: .3s
+
+.fade-in-down
+    animation-name: fadeInDown
+    animation-duration: .3s
+
+.hidden
+    animation-name: hidden
+    animation-duration: .3s

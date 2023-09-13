@@ -1,0 +1,48 @@
+@import '@/sass/mixins.sass'
+.container
+    width: 100% !important
+    padding: 16px
+    box-sizing: border-box
+    border-radius: 6px
+    background: $main-color-neutral-light-100
+    position: relative
+    .calendar_line
+        position: absolute
+        left: 50%
+        top: 80px
+        z-index: 3
+        height: 370px
+        width: 1px
+        background: #ddd
+        &.filters
+            left: 500px
+
+.button
+    background: white
+    border: solid 1px $main-color-neutral-dark-200
+    border-radius: 6px
+    height: 36px
+    padding: 0px 8px
+    color: $main-color-neutral-dark-100
+    margin: 8px 0px
+    text-align: left
+    position: relative
+    box-sizing: border-box
+    +flex(flex,center,space-between,row)
+    .active
+        color: black
+    i
+        +flex(flex,center,flex-end,row)
+
+.placeholder
+    text-overflow: ellipsis
+    overflow-x: hidden
+    white-space: nowrap
+
+@include mobile
+    .container
+        height: 80vh
+        overflow-y: scroll !important
+        overflow-x: hidden !important
+        .calendar_line
+            display: none !important

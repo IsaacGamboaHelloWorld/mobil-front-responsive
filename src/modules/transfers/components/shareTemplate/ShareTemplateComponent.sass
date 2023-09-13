@@ -1,0 +1,27 @@
+@import '@/sass/mixins.sass'
+
+.container
+    &-buttons
+        +flex(flex, inherit, flex-end, row)
+        gap: 16px
+    &-modal
+        max-height: 476px
+        max-width: 288px
+        padding: 0px 16px
+        box-sizing: border-box
+    &-status
+        border: 1px solid
+        border-radius: 4px
+        text-align: center
+        max-width: 90px
+.success
+    border: 1px solid $main-color-semantic-green-200
+    color: $main-color-semantic-green-400
+    background-color: $main-color-semantic-green-100
+    width: 100%
+
+.empty
+    width: 42px
+
+.sub-row
+    +flex(flex, flex-start, center, column)

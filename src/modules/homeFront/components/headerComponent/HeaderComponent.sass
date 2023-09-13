@@ -1,0 +1,110 @@
+@import '@/sass/mixins.sass'
+
+.container-
+    &header
+        +flex(flex, inherit, space-between, row)
+        border-bottom: 1px solid $main-color-neutral-light-400
+        position: absolute
+        top: 0px
+        left: 122px
+        width: calc( 100% - 122px )
+        max-height: 121px
+        box-sizing: border-box
+        background: $main-color-neutral-light-100
+        @media print
+            display: none
+    &info
+        width: 80%
+        padding: 16px 24px
+        box-sizing: border-box
+        .info-label
+            +flex(flex, inherit, inherit, row)
+    &icons
+        box-sizing: border-box
+        gap: 8px
+        +flex(flex,center,space-between,row)
+        .logout-icon
+            display: none
+        .container-icon
+            position: relative
+
+.notifications
+    &-component
+        position: absolute
+        width: 294px
+        height: 516px
+        top: 32px
+        right: 0px
+    &-modal
+        display: none
+
+.profile
+    &-modal
+        display: none
+    &-component
+        position: absolute
+        top: 32px
+        right: 0px
+        width: 294px
+
+.mobile
+    display: none
+
+@include tablet
+    .container-header
+        left: 110px
+
+@include mobile
+    .notifications
+        &-desktop
+            display: none
+        &-modal
+            display: block
+        &-component
+            position: relative
+            top: 0px
+    .profile
+        &-desktop
+            display: none
+        &-modal
+            display: block
+        &-component
+            position: relative
+            top: 0px
+
+    .container-
+        &header
+            +flex(flex, inherit, inherit, column-reverse)
+            width: 100%
+            max-height: 200px
+            left: 0
+        &info
+            width: 100%
+            padding: 16px
+            padding-top: 0px
+            .text-label-
+                &name
+                    font-size: 16px
+                    line-height: 24px
+                    font-weight: 600
+                &company
+                    font-size: 12px
+                    line-height: 16px
+                    font-weight: 600
+                &company-name
+                    font-size: 12px
+                    line-height: 16px
+                    font-weight: 400
+        &icons
+            margin: 0px
+            padding: 16px
+            gap: 29px
+            .mobile
+                +flex(flex, center, center,row)
+                img
+                    max-height: 26px
+            .logout-
+                &button
+                    display: none
+                &icon
+                    display: flex

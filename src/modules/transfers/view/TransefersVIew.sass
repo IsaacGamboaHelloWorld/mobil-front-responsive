@@ -1,0 +1,48 @@
+@import '@/sass/mixins.sass'
+
+.container_module_top
+    background: $main-color-neutral-light-100
+    border: solid 1px $main-color-neutral-light-500
+    padding: 24px
+    padding-bottom: 0px
+    border-radius: 6px
+    .container_title
+        +flex(flex,center,space-between,row)
+        gap: 16px
+        .button
+            width: 200px
+    .container_tab
+        +flex(flex,center,flex-start,row)
+        >div
+            width: 25%
+            text-align: center
+            padding: 8px 0px
+            cursor: pointer
+            p
+                color: $main-color-neutral-dark-300
+.active
+    &.bpop
+        border-bottom: 2px solid $main-color-semantic-green-400
+    &.bbog
+        border-bottom: 2px solid $main-color-semantic-blue-400
+    &.bavv
+        border-bottom: 2px solid $main-color-semantic-blue-400
+    &.bocc
+        border-bottom: 2px solid $main-color-semantic-blue-400
+
+@include mobile
+    .container_module_top
+        .container_title
+            width: 100%
+            align-items: flex-start
+            flex-direction: column
+            .button
+                width: 100%
+        .container_tab
+            >div
+                width: 100%
+@include tablet
+    .container_module_top
+        .container_tab
+            >div
+                width: 100%

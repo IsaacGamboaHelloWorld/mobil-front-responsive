@@ -1,0 +1,32 @@
+.container
+    &-images
+        max-height: 189px
+        overflow-y: scroll
+        scroll-behavior: smooth
+.photo
+    cursor: pointer
+    user-select: none
+    outline: none
+    width: 125px
+    height: 92.5px
+    margin: 2px
+    &-container
+        cursor: pointer
+        user-select: none
+        outline: none
+        position: relative
+        display: inline-block
+    &:hover
+        .photo-overlay
+            display: block
+    &-overlay
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        border: 3px solid $main-color-semantic-green-400
+        box-sizing: border-box
+        background-color: $main-color-semantic-green-200
+        opacity: 40%
+        display: none

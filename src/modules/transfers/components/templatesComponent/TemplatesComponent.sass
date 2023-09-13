@@ -1,0 +1,24 @@
+@import '@/sass/mixins.sass'
+
+.container
+    &-buttons
+        +flex(flex, inherit, flex-end, row)
+        gap: 16px
+    &-icons
+        +flex(flex, inherit, flex-end, row)
+    &-modal
+        max-height: 476px
+        max-width: 288px
+        padding: 0px 16px
+        box-sizing: border-box
+.icon
+    cursor: pointer
+    font-size: 18px
+    &-bpop
+        color: $bpop-color-primary-400
+    &-bbog
+        color: $main-color-semantic-blue-400
+    &-bavv
+        color: $main-color-semantic-blue-400
+    &-bocc
+        color: $main-color-semantic-blue-400

@@ -1,0 +1,13 @@
+
+@import '@/sass/mixins.sass'
+.container-myBank
+    .container_down
+        +flex(flex,center,flex-end,row)
+        &-button
+            width: 120px
+
+@include mobile
+    .container-myBank
+        .container_down
+            &-button
+                width: 100%

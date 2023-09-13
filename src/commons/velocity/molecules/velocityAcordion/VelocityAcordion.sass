@@ -1,0 +1,38 @@
+
+@import '@/sass/mixins.sass'
+.velocity-accordion
+    i
+        color: $main-color-neutral-dark-400
+    .container
+        &-body
+
+            display: flex
+            flex-wrap: wrap
+            opacity: 0
+            transition: all 0.3s ease-out
+
+            &.open
+                opacity: 1
+            .item
+                width: 50%
+                .item-phone
+                    color: $main-color-neutral-dark-300
+        &-head
+            max-width: 100%
+            +flex(flex,center,space-between,row)
+            box-sizing: border-box
+            position: relative
+            &.open
+                background: $main-color-neutral-light-300
+
+        &-header
+            box-sizing: border-box
+            +flex(flex,center,space-between,row)
+            padding: 16px
+
+@include mobile
+    .container-head
+        .acordion-icon
+            position: absolute
+            top: 25px
+            right: 25px

@@ -1,0 +1,65 @@
+@import '@/sass/mixins.sass'
+.container
+    &-dropdown
+        position: relative
+        .label-text
+            text-overflow: ellipsis
+            overflow-x: hidden
+            white-space: nowrap
+    &-selector
+        position: relative
+        .selector
+            height: 36px
+            cursor: pointer
+            box-sizing: border-box
+            margin: 8px 0px
+            z-index: 1
+            outline: none
+            border: 1px solid $main-color-neutral-dark-200
+            border-radius: 6px
+            &-error
+                border-color: $main-color-semantic-red-400
+            &:focus
+                border-color: $main-color-semantic-blue-400 !important
+    &-label
+        +flex(flex, inherit, inherit, row)
+    &-options
+        position: absolute
+        box-sizing: border-box
+        user-select: none
+        max-height: 384px
+        background-color: $main-color-neutral-light-100
+        border: 1px solid $main-color-neutral-dark-200
+        border-radius: 6px
+        padding: 8px 0px
+        overflow-y: scroll
+        z-index: 2
+        .option
+            cursor: pointer
+            box-sizing: border-box
+            padding: 8px 16px
+            &:hover
+                &.bpop
+                    background-color: $bpop-color-semantic-green-100
+                &.bavv
+                    background-color: $bavv-color-semantic-blue-100
+                &.bbog
+                    background-color: $bbta-color-semantic-blue-100
+                &.bocc
+                    background-color: $bocc-color-semantic-blue-100
+#icon-arrow
+    position: absolute
+    font-size: 14px
+    cursor: pointer
+    outline: none
+    right: 10px
+    top: 20px
+#icon-label
+    color: $main-color-neutral-dark-300
+    font-size: 16px
+    margin-left: 6px
+
+.error
+    color: $main-color-semantic-red-400 !important
+.selected
+    color: $main-color-semantic-blue-400 !important

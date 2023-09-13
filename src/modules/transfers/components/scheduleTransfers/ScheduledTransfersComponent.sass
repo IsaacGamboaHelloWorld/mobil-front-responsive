@@ -1,0 +1,22 @@
+@import '@/sass/mixins.sass'
+.container
+    &_filters
+        background: $main-color-neutral-light-100
+        border: solid 1px $main-color-neutral-light-400
+        border-radius: 6px
+        .filters
+            padding: 16px
+            padding-bottom: 24px
+            border-top: solid 1px $main-color-neutral-light-400
+            +flex(flex,center,flex-start,row)
+            >div
+                width: 40%
+
+@include tablet
+    .container
+        &_filters
+            .filters
+                flex-direction: column
+                >div
+                    margin: 0px !important
+                    width: 100%

@@ -1,0 +1,84 @@
+@import '@/sass/mixins.sass'
+
+.container
+    &-options
+        +flex(flex, inherit, inherit, row)
+        gap: 8px
+    &-buttons
+        +flex(flex, inherit, space-between, row)
+        gap: 32px
+        .r
+            +flex(flex, inherit, flex-end, row)
+            width: 100%
+    &-accordion
+        border: 1px solid $main-color-neutral-light-400
+        background-color: $main-color-neutral-light-100
+        border-radius: 6px
+    &-icons
+        +flex(flex, center, flex-end, row)
+    &-modal
+        max-height: 476px
+        max-width: 288px
+        padding: 0px 16px
+        box-sizing: border-box
+
+.vel-table
+    border-top-right-radius: 0px
+    border-top-left-radius: 0px
+    border-bottom: 0px
+
+.step-bar
+    +flex(flex, inherit, inherit, row)
+    &-icon
+        &-container
+            +flex(flex, center, center, column)
+            height: 24px
+            aspect-ratio: 1
+            text-align: center
+            border: 1px solid $main-color-neutral-dark-200
+            border-radius: 100px
+    &-line
+        position: relative
+        top: 12px
+        height: 1px
+        width: 100%
+        color: $main-color-neutral-dark-100
+    .selected
+        &-bpop
+            border-color: $bpop-color-primary-400
+        &-bbog
+            border-color: $main-color-semantic-blue-400
+        &-bavv
+            border-color: $main-color-semantic-blue-400
+        &-bocc
+            border-color: $main-color-semantic-blue-400
+
+.icon
+    +flex(flex, center, center, inherit)
+    border-radius: 100px
+    color: $main-color-neutral-light-100
+    height: 100%
+    width: 100%
+    font-size: 14px
+    &-text
+        font-size: 14px
+    &-gray
+        background-color: gray
+    &-table
+        cursor: pointer
+        font-size: 18px
+        &-bpop
+            color: $bpop-color-primary-400
+        &-bbog
+            color: $main-color-semantic-blue-400
+        &-bavv
+            color: $main-color-semantic-blue-400
+    &-bocc
+        color: $main-color-semantic-blue-400
+
+.text
+    &-colored
+        color: $main-color-semantic-blue-400
+
+.input
+    width: 50%

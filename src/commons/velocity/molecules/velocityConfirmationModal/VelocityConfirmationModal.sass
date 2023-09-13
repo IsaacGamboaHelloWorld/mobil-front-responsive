@@ -1,0 +1,29 @@
+@import '@/sass/mixins.sass'
+.container
+    &-modal
+        +flex(flex, center, inherit, column)
+        padding: 40px 16px 24px 16px
+        background-color: $main-color-neutral-light-100
+        border-radius: 6px
+        width: 288px
+    &-icon
+        +flex(flex, center, center, column)
+        margin-top: 40px
+        height: 56px
+        width: 56px
+        border-radius: 100px
+        border: 2px solid
+    &-text
+        text-align: center
+        padding: 22px 0px
+
+.icon
+    font-size: 30px
+    &-warning
+        color: $main-color-semantic-yellow-400
+    &-check
+        color: $main-color-semantic-green-400
+
+.text
+    &-l
+        color: $main-color-neutral-dark-300

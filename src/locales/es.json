@@ -1,0 +1,649 @@
+{
+  "REUSABLES": {
+    "NA": "No aplica",
+    "YES": "Si",
+    "NO": "No",
+    "PERMITION": "Estimado cliente, usted no tiene permisos para realizar esta operación",
+    "BUTTON": {
+      "CONTINUE": "Continuar",
+      "CANCEL": "Cancelar",
+      "ACEPT": "Aceptar",
+      "GO-BACK": "Volver",
+      "PLUS": "Ver más",
+      "LESS": "Ver menos",
+      "FILE": "Solicitar archivo",
+      "SEARCH": "Consultar",
+      "SELECT": "Seleccionar",
+      "SEE-MORE": "Ver más",
+      "SEE-MORE-DETAIL": "Ver más detalle",
+      "NEXT-PAGE": "Siguiente",
+      "PREVIOUS-PAGE": "Anterior",
+      "EXPORT": "Exportar",
+      "CLOSE": "Cerrar",
+      "SAVE": "Guardar"
+    },
+    "INPUT": {
+      "PRODUCT-TYPE": "Tipo de producto",
+      "PRODUCT-NAME": "Nombre producto",
+      "SELECT-ONE": "Seleccione uno",
+      "TYPE": "Digite",
+      "TYPE-OR-SELECT": "Digite o seleccione",
+      "TYPE-OR-SELECT-ONE": "Digite o seleccione uno",
+      "TYPE-NUMBER": "Digite el número",
+      "INSERT-VALUE": "Ingrese el valor",
+      "SEARCH": "Buscar"
+    }
+  },
+  "STATES": {
+    "ALL": "Todos",
+    "NAT": "No Autorizada por Tiempo",
+    "VE": "Vencida",
+    "NA": "No Autorizada",
+    "EXI": "Exitosa",
+    "PA": "Por Autorizar",
+    "RE": "Rechazada",
+    "AN": "Anulada",
+    "NE": "No Ejecutada"
+  },
+  "AUTH-MODULE": {
+    "SECURITY-CONDITIONS": "condiciones de seguridad",
+    "SECURITY-CONDITIONS-BEFORE": "Operar el portal implica aceptar las",
+    "SECURITY-CONDITIONS-AFTER": "que ofrece el servicio.",
+    "ACORDION-TITLE-BUSINESS": "Líneas de servicio al cliente Empresas",
+    "ACORDION-TITLE-CUSTOMER": "Líneas de defensor del consumidor financiero",
+    "OPTION-ES": "Español",
+    "OPTION-EN": "Ingles",
+    "STEPS": {
+      "USER-RSA-KEY": {
+        "TITLE": "Bienvenido al Portal Empresarial",
+        "INFORMATION": "Por favor, ingrese sus datos de usuario",
+        "DESCRIPTION-INPUT": "Ingrese aquí el usuario asignado por la empresa",
+        "BTN-TITLE": "Continuar",
+        "PLACE-HOLDER": "Usuario",
+        "INPUT-LABEL": "Usuario",
+        "EMAIL-TEXT-BEFORE": "Se le ha enviado a su correo",
+        "EMAIL-TEXT-AFTER": "las instrucciones para restablecer su clave.",
+        "SESSION-CLOSED": "Se ha cerrado sesión exitosamente"
+      },
+      "LOGIN": {
+        "TITLE": "Bienvenido al Portal Empresarial",
+        "INFORMATION": "Por favor, ingrese sus datos de usuario",
+        "LABEL": "Usuario",
+        "DESCRIPTION-INPUT": "Ingrese aquí su clave dinámica token",
+        "BTN-TITLE": "Continuar",
+        "SECOND-BTN-TITLE": "Cancelar",
+        "PLACE-HOLDER": "Ingresar token",
+        "INPUT-LABEL": "Token físico"
+      },
+      "AUTH": {
+        "TITLE": "Verifique su información antes de ingresar",
+        "LABEL-USER": "Usuario",
+        "LABEL-TOKEN": "Su número de token es:",
+        "DESCRIPTION": "Si sus datos o la imagen de seguridad no corresponden, comuníquese con el Banco",
+        "BTN-TITLE": "Continuar",
+        "SECOND-BTN-TITLE": "Cancelar",
+        "PLACE-HOLDER": "Por favor, ingrese su clave",
+        "INPUT-LABEL": "Clave",
+        "FORGOT-PASSWORD": "¿Olvidó su clave?"
+      },
+      "CHANGE-PASSWORD": {
+        "TITLE": "Administración clave del usuario",
+        "LABEL-BEFORE": "Clave anterior",
+        "LABEL-NEW": "Clave nueva",
+        "LABEL-CONFIRMATION-NEW": "Confirmación clave",
+        "DESCRIPTION": "Por favor ingrese la clave anterior y la nueva clave.",
+        "BTN-TITLE": "Continuar",
+        "SECOND-BTN-TITLE": "Cancelar",
+        "PLACEHOLDER": "Por favor, ingrese la clave temporal",
+        "CONFIRMATION-LABEL-1": "¿Está seguro de actualizar la clave?",
+        "CONFIRMATION-LABEL-2": "Una vez actualizada no podrá cambiar la clave.",
+        "CONFIRMATION-LABEL-3": "Clave actualizada con éxito",
+        "BUTTON-CHANGE": "Actualizar clave",
+        "ERRORS": {
+          "REQUIRED": "La clave debe de tener al menos 8 carácteres.",
+          "MIN-LENGTH": "La clave debe de tener al menos 8 carácteres.",
+          "POLITICS": "Estimado usuario, la clave ingresada no cumple las políticas de credenciales.",
+          "DIFFERENT": "La clave nueva no debe contener la clave actual",
+          "NAME-IS-PASS": "Estimado usuario, la clave nueva no debe contener el nombre de usuario.",
+          "SAME-AS": "Las claves no coinciden."
+        },
+        "POLITICS": {
+          "TITLE": "Políticas de credenciales",
+          "LABEL-1": "Recuerda que tu nueva contraseña debe incluir:",
+          "LABEL-2": "Minimo 3 caracteres alfabéticos (Letras)",
+          "LABEL-3": "Mínimo 2 caracteres numéricos (Números)",
+          "LABEL-4": "Mínimo 5 caracteres entre números y letras",
+          "LABEL-5": "Recomendamos el uso de mayúsculas y caracteres especiales (#$%&)"
+        }
+      },
+      "IP-CONFIG": {
+        "TITLE": "Administración de IPs",
+        "LABEL-1": "Elige si utilizar una única IP o Rango de IPs",
+        "OPTION-UNIQUE": "IP única",
+        "OPTION-RANGE": "Rango de IPs",
+        "LABEL-2": "Por favor ingresa la IP inicial y final, la IP de tu Dispositivo es ",
+        "INPUT-LABEL-1": "IP de tu dispositivo",
+        "INPUT-LABEL-2": "IP inicial",
+        "INPUT-LABEL-3": "IP final",
+        "WRONG-IP": "La IP que ingresó es inválida",
+        "PLACE-HOLDER": "Ej. 000.000.000.000",
+        "CONFIRMATION-LABEL-1": "Dirección IP actualizada con éxito",
+        "CONFIRMATION-LABEL-2": "Se redirigirá al portal de inicio"
+      },
+      "IMAGES": {
+        "HEADER": "Configuración Imagen de seguridad",
+        "BODY": "Por favor escoge una categoría y selecciona una imagen, esta será tu imagen de seguridad.",
+        "DROPDOWN-LABEL": "Selecciona una categoría, y una sola imagen",
+        "DROPDOWN-PLACEHOLDER": "Selecciona una categoría",
+        "CONFIRMATION-LABEL-1": "¿Está seguro de actualizar la imagen de seguridad?",
+        "CONFIRMATION-LABEL-2": "Una vez actualizada no podrá cambiar la imagen.",
+        "CONFIRMATION-LABEL-3": "Imagen de seguridad actualizada con éxito",
+        "CONFIRMATION-LABEL-4": "Se redirigirá al portal de inicio",
+        "BUTTON-CHANGE": "Actualizar imagen",
+        "USED-IMAGE": "La imagen ha sido utilizada recientemente"
+      }
+    },
+    "SERVICE-LINES": {
+      "bbog": {
+        "LABEL-1": "Defensor del Consumidor Financiero:",
+        "LABEL-2": "Alvaro Julio Rodríguez Pérez",
+        "LABEL-3": "Alejandro Andrés Gómez Montoya (Suplente)",
+        "LABEL-4": "Dirección: Calle 36 no. 7 - 47 Piso 5, Bogotá D.C.",
+        "LABEL-5": "Teléfono: 601 3320101",
+        "LABEL-6": "Celular: 318 3730077",
+        "LABEL-7": "Email: defensoriaconsumidorfinanciero{att}bancodebogota.com.co",
+        "LABEL-8": "Horario de atención: Lunes a Viernes 8:00 a.m. a 5:30 p.m.",
+        "LABEL-9": "",
+        "LABEL-10": "",
+        "LABEL-11": "",
+        "LABEL-12": "",
+        "LABEL-13": ""
+      },
+      "bpop": {
+        "LABEL-1": "Defensor del Consumidor FInanciero Principal: Darío Laguando Monsalve",
+        "LABEL-2": "Defensor del Consumidor Financiero Suplente: Gonzalo Méndez Morales",
+        "LABEL-3": "Dirección: Calle 70A No. 11 - 83 Bogotá.",
+        "LABEL-4": "Teléfono: 601 2110351",
+        "LABEL-5": "Celular: 3203981187",
+        "LABEL-6": "Correo electrónico: reclamaciones{att}defensorialg.com.co",
+        "LABEL-7": "Horario de atención al público de 8:30 AM a 12:30 PM y de 2:30 PM a 5:30 PM de lunes a viernes.",
+        "LABEL-8": "Ingresando a la página web http://www.defensorialg.com.co y dando clic al logo del Banco Popular, diligenciar el formulario.",
+        "LABEL-9": "",
+        "LABEL-10": "",
+        "LABEL-11": "",
+        "LABEL-12": "",
+        "LABEL-13": ""
+      },
+      "bocc": {
+        "LABEL-1": "Lina Maria Zorro Ceron y Lorena Cerchar Rosado (suplente)",
+        "LABEL-2": "Dirección Carrera 7 No. 71-52 Torre A Piso 1 Bogotá",
+        "LABEL-3": "Tel. (601) 7462060 Ext. 15318, 15311 Celular 315 5704405 Fax (601) 3121024",
+        "LABEL-4": "defensoriacliente{att}bancodeoccidente.com.co",
+        "LABEL-5": "Lunes a viernes 8:30 a.m. - 5:30 p.m.",
+        "LABEL-6": "",
+        "LABEL-7": "",
+        "LABEL-8": "",
+        "LABEL-9": "",
+        "LABEL-10": "",
+        "LABEL-11": "",
+        "LABEL-12": "",
+        "LABEL-13": ""
+      },
+      "bavv": {
+        "LABEL-1": "Señor Usuario:",
+        "LABEL-2": "Dirigirse al Defensor del Consumidor Financiero para presentar una reclamación no requiere ninguna formalidad, basta con enviar comunicación escrita indicando el motivo de la queja, describiendo los hechos y los derechos que considere vulnerados, así como su identificación y demás datos que le permitan a la Defensoría contactarlo. ",
+        "LABEL-3": "Datos de contacto para para la presentación de quejas",
+        "LABEL-4": "Defensor Principal: Doctora Patricia Amelia Rojas Amezquita",
+        "LABEL-5": "Defensor Suplente: Doctor Carlos Mario Serna Jaramillo",
+        "LABEL-6": "Correos electrónicos: defensoria{att}ysernarojasasociados.com",
+        "LABEL-7": "Dirección física: Carrera 16 A No 80-63 oficina 601. Edificio Torre Oval. Bogotá D.C. ",
+        "LABEL-8": "Horario de atención presencial: Lunes a viernes de 8:00 am a 12:30 m y de 2:00 pm a 5:00 pm.",
+        "LABEL-9": "Teléfono: (601) 4898285.",
+        "LABEL-10": "Horario de atención telefónica: Lunes a viernes de 8:00 a.m. a 5:30 p.m. - Buzón 24 horas del día",
+        "LABEL-11": "Ve a la página del Defensor del Consumidor Financiero,",
+        "LABEL-12": "Opción 1: Página principal / Envíe su queja",
+        "LABEL-13": "Opción 2: Panel Defensoría / Envíe su reclamación"
+      }
+    }
+  },
+  "SBL-CHALLENGES": {
+    "PUSH-NOTIFICATION": {
+      "TITLE": "Confirme su identidad para continuar",
+      "TEXT-1": "Enviamos una notificación a su aplicación móvil. Ábrala y pruebe la operación para autenticarse.",
+      "TEXT-2": "¿No recibió ninguna notificación?",
+      "TEXT-3": "Intente reenviándola o ingresando un código de seguridad.",
+      "BUTTON-RETRY": "Reenviar notificación",
+      "BUTTON-SEND-CODE": "Ingresar código de seguridad",
+      "TIMEOUT": "El tiempo de espera se ha acabado"
+    },
+    "SOFT-TOKEN": {
+      "TITLE": "Ingrese el código de seguridad para continuar",
+      "CONTENT": "Para generar el código, inrese a la aplicación móvil y en la opción Token virtual, seleccione Generar código de seguridad."
+    }
+  },
+  "HOMEFRONT-MODULE": {
+    "HEADER": {
+      "TITLE": "Hola,",
+      "LABEL-COMPANY": "Empresa:",
+      "LABEL-LOGOUT": "Cerrar sesión "
+    },
+    "PROFILE-WINDOW": {
+      "COMPANY-LABEL": "Empresa",
+      "ID-LABEL": "Nro. Identificación",
+      "INTERNAL-ID-LABEL": "Identificador interno",
+      "CURRENT-DATE-LABEL": "Fecha actual",
+      "LAST-LOGIN-LABEL": "Último ingreso",
+      "IP-LABEL": "Dirección IP",
+      "EDIT-PROFILE-BUTTON-LABEL": "Cambiar clave e imagen"
+    },
+    "NOTIFICATIONS-WINDOW": {
+      "NOTIFICATIONS-LABEL": "Notificaciones",
+      "PENDING-AUTHORIZATIONS": "Autorizaciones pendientes",
+      "NO-NOTIFICATIONS-LABEL": "No tiene notificaciones"
+    },
+    "SERVICE-ITEMS": {
+      "BANK": "Mi Banco",
+      "MOVEMENTS": "Movimientos",
+      "BALANCES": "Saldos por producto",
+      "SEARCH": "Consultas",
+      "TRANSFERS": "Transferencias",
+      "AUTHORIZATIONS": "Autorizaciones",
+      "CONTACT": "Contáctenos"
+    }
+  },
+  "MY-BANK-MODULE": {
+    "TITLE": "Mi Banco",
+    "EXPORT-BUTTON": "Exportar",
+    "MIGA": {
+      "FIRST": "Mi Banco",
+      "SECOND": "Detalle"
+    },
+    "SUMMARY-CARDS": {
+      "BUTTON": "Ver detalle",
+      "CURRENT-TITLE": "Cuentas corrientes",
+      "SAVING-TITLE": "Cuentas de ahorro",
+      "TOTAL-TITLE": "Total productos",
+      "AVAILABLE-BALANCE": "Saldo disponible",
+      "REDEMPTION-BALANCE": "Saldo canje",
+      "CURRENT-BALANCE": "Saldo actual"
+    },
+    "DETAIL": {
+      "TABLE": {
+        "PRODUCT-NAME": "Nombre producto",
+        "AVAILABLE": "Saldo disponible",
+        "TRADE": "Saldo en canje",
+        "CURRENT": "Saldo actual",
+        "BUTTON": "Ver más",
+        "SEARCHER-LABEL": "Buscar",
+        "SEARCHER-PLACEHOLDER": "Buscar por nombre",
+        "DETAIL": {
+          "DDA-TYPE": "Cuenta corriente",
+          "SDA-TYPE": "Cuenta ahorros",
+          "PRODUCT-TYPE": "Tipo de producto",
+          "ID": "No. Producto",
+          "STATE": "Estado producto",
+          "YESTERDAY-BALANCE": "Saldo ayer",
+          "REMITTANCES": "Remesas",
+          "OVERDRAFT-DAYS": "Días sobregiro",
+          "OVERDRAFT-APPROVED-QUOTE": "Cupo aprobado sobregiro",
+          "OVERDRAFT-STATUS": "Estado cupo sobregiro",
+          "OVERDRAFT-AVAILABLE-QUOTE": "Cupo disponible sobregiro",
+          "QUOTA-TRADE-APPROVED": "Cupo aprobado canje",
+          "QUOTA-REMITTANCES-APPROVED": "Cupo aprobado remesas",
+          "PRINT": "Imprimir"
+        }
+      }
+    }
+  },
+  "BALANCE-BY-PRODUCTS-MODULE": {
+    "BBP-LABEL": "Saldos por producto",
+    "BREADCRUMB-1": "Consultas",
+    "BOCC-ADVICE": "Estimado cliente, recuerde que el horario para realizar consulta de Saldos Fiduciaria de Occidente es de 7:00 am a 2:00 pm",
+    "TODAY-MOVEMENTS": "Movimientos hoy",
+    "TABLE": {
+      "HEADER": {
+        "NAME": "Nombre producto",
+        "NUMBER": "Nro. Producto",
+        "AVAILABLE-BALANCE": "Saldo disponible",
+        "YESTERDAY-BALANCE": "Saldo ayer",
+        "TOTAL-PAYMENT": "Pago total",
+        "CURRENT-BALANCE": "Saldo actual",
+        "APROVED-LIMIT": "Cupo aprobado",
+        "AVAILABLE-LIMIT": "Cupo disponible",
+        "BALANCE-TO-DAY": "Saldo a la fecha",
+        "TOTAL-DEBT": "Deuda total",
+        "HOLDER-NAME": "Nombre titular",
+        "ID-TYPE": "Tipo de identificación",
+        "START-DATE": "Fecha de inicio",
+        "CANON-VALUE": "Valor canon"
+      },
+      "PRODUCT-TYPE": "Tipo de producto",
+      "PRODUCT-NAME": "Nombre producto",
+      "PRODUCT-DETAIL": "Detalle producto",
+      "BUTTON-LABEL": "Consultar saldos",
+      "EMPTY": "No se encontraron resultados, seleccione otros parámetros",
+      "PRINT": "Imprimir",
+      "SEARCH": "Buscar",
+      "DETAIL": {
+        "ACTIVE": "Activa",
+        "ACTIVE-MALE": "Activo",
+        "INACTIVE": "Inactiva",
+        "INACTIVE-MALE": "Inactivo",
+        "LEASING-TYPE": "Linea de leasing"
+      }
+    }
+  },
+  "VELOCITY-PAGINATOR": {
+    "BUTTON-PREVIOUS-PAGE": "Anterior",
+    "BUTTON-NEXT-PAGE": "Siguiente"
+  },
+  "MOVEMENTS-MODULE": {
+    "TITLE": "Movimientos",
+    "MIGA": {
+      "FIRST": "Consultas",
+      "SECOND": "Movimientos"
+    },
+    "SEARCH": {
+      "FILE-SUCCES": "Estimado cliente, la solicitud de archivo fue generada exitosamente, para ver el estado diríjase a la funcionalidad Descarga de Archivos dentro del portal web.",
+      "COMPONENT-LABEL": "Seleccione un producto y periodo",
+      "TYPE-LABEL": "Tipo de producto",
+      "NAME-LABEL": "Nombre de producto",
+      "PERIOD-LABEL": "Periodo",
+      "PRODUCT-DROPDOWN-LABEL": "Digite o seleccione",
+      "DEFAULT-PRODUCT-LABEL": "Cuenta Corriente",
+      "CALENDAR-LABEL": "Periodo",
+      "CALENDAR-SELECT": "Seleccionar",
+      "CALENDAR-CANCEL": "Cancelar",
+      "OTHER-PARAMETERS": "Otros parámetros",
+      "VALUE": "Valor a consultar",
+      "RANGE": "Rango de valores",
+      "VALUE-PLACEHOLDER": "Seleccione uno",
+      "RANGE-PLACEHOLDER": "$ 0.00 - $ 9,999,999,999,999.99",
+      "START-VALUE": "Valor inicial",
+      "END-VALUE": "Valor final",
+      "START-VALUE-PLACEHOLDER": "$ 0.00",
+      "END-VALUE-PLACEHOLDER": "$ 9,999,999,999,999.99",
+      "FILE-TYPE-MESSAGES": {
+        "2": "Estimado cliente, para generar la solicitud de archivo el periodo necesita incluir únicamente fechas anteriores a la actual",
+        "3": "Estimado cliente, para generar la solicitud de archivo el periodo seleccionado debe incluir fechas anteriores o la fecha actual, pero no ambas a la vez."
+      }
+    },
+    "TABLE": {
+      "DATE": "Fecha",
+      "TRANSACTION": "Transacción",
+      "ID": "No. Documento",
+      "DEBITS": "Débitos",
+      "CREDITS": "Créditos",
+      "DETAIL": {
+        "TITLE": "Detalle movimiento",
+        "DATE": "Fecha aplicación",
+        "TIME": "Hora",
+        "OFFICE": "Oficina",
+        "DESC": "Desc. Oficina",
+        "VALUE": "Valor efectivo",
+        "VALUE-CH": "Valor cheque",
+        "TOTAL-VALUE": "Valor total",
+        "REFERENCE-A": "Referencia 1",
+        "REFERENCE-B": "Referencia 2"
+      }
+    },
+    "PARAMETERS": {
+      "TITLE": "Parámetros de consulta",
+      "NAME": "Nombre producto",
+      "TYPE": "Tipo de producto",
+      "ID": "No. Producto",
+      "PERIOD": "Periodo"
+    }
+  },
+  "AUTHORIZATIONS-MODULE": {
+    "MIGA": {
+      "FIRST": "Autorizaciones",
+      "SECOND": "Ver más detalle",
+      "RESULT": "Resultado"
+    },
+    "STEP-LIST": {
+      "TITLE": "Autorizaciones",
+      "EMPTY": "No se encontraron resultados, seleccione otros parámetros.",
+      "TABLE": {
+        "DATE": "Fecha",
+        "TYPE": "Tipo de autorización",
+        "SERVICE": "Servicio / Archivo",
+        "USER": "Usuario creador",
+        "VALUE": "Valor",
+        "REFERENCE": "Referencia",
+        "BTN-A": "Autorizar",
+        "BTN-B": "Rechazar",
+        "MONETARY": "Monetario",
+        "NO-MONETARY": "No Monetario",
+        "FILE": "Transacciones masivas",
+        "ALL": "Todos"
+      }
+    },
+    "ROW-DETAIL-COMPONENT": {
+      "HEADER": "Detalle autorización",
+      "RESPONSABILITY": "Responsabilidad",
+      "ROLE": "Rol",
+      "APPROVERS-AMOUNT": "Cantidad de aprobadores",
+      "CURRENT-APPROVALS": "Aprobaciones actuales",
+      "PENDING-APPROVALS": "Aprobaciones pendientes"
+    },
+    "STEP-DETAIL": {
+      "TITLE": "Detalle de operación",
+      "TITLE-PROFILE": "Modificar Perfil",
+      "TITLE-PRODUCTS": "Asignar Productos",
+      "PRODUCTS-CARD": "Nombre Producto - No.Producto",
+      "TABLE": {
+        "TYPE": "Tipo de producto",
+        "ID": "No. Producto",
+        "NAME": "Nombre producto",
+        "TRANSACTION": "Transacción",
+        "DAY": "Diario",
+        "MONTH": "Mensual"
+      }
+    },
+    "STEP-RESULT": {
+      "ALERT-TITLE-A": "Aprobado exitosamente",
+      "ALERT-TITLE-R": "Autorización rechazada",
+      "ALERT-TITLE-C": "Aprobado exitosamente",
+      "SUCCESS-ALERT": "Realizó la autorización de esta transacción en su totalidad. Para ver el resultado diríjase a la consulta de Archivos Cargados",
+      "R-ALERT": "Autorización rechazada Por motivo de ",
+      "E-ALERT": "Realizó la autorización de esta transacción en su totalidad. Para ver el resultado diríjase a la consulta de Archivos Cargados",
+      "HEADER": "Resultado de autorización",
+      "LABEL-1": "Tipo de archivo",
+      "LABEL-2": "Nombre archivo",
+      "LABEL-3": "No. Autorización",
+      "LABEL-4": "No. Total Registros",
+      "LABEL-5": "Fecha de Carga",
+      "LABEL-6": "Hora carga",
+      "USER-NAME": "Nombre de usuario creador",
+      "APPROVED": "Aprobada",
+      "REJECTED": "Rechazada",
+      "ERROR": "Error"
+    },
+    "FILTERS": {
+      "TITLE": "Filtros",
+      "TYPE-PLACEHOLDER": "Seleccione uno",
+      "TYPE-LABEL": "Tipo de autorización",
+      "CALENDAR-LABEL": "Fecha"
+    },
+    "REJECT": {
+      "TITLE": "Rechazar autorización",
+      "DESC": "Usted está apunto de rechazar las autorizaciones. Para confirmar esta acción por favor escriba el motivo del rechazo.",
+      "LABEL": "Motivo de rechazo",
+      "PLACEHOLDER": "Motivo de rechazo",
+      "INPUT-DESC": "Ingrese aquí el motivo por el que rechaza la transacción"
+    }
+  },
+  "TRANSFERS-MODULE": {
+    "TITLE": "Transferencias",
+    "NEW": "Nueva transacción",
+    "LAST": "Últimas transacciones",
+    "SCHEDULE": "Transacciones programadas",
+    "TEMPLATES": "Plantillas",
+    "LAST-TRANFERS": {
+      "TABLE": {
+        "DATE": "Fecha",
+        "PRODUCT-NAME": "Nombre producto",
+        "NAME": "Nombre destinatario",
+        "ENTITIE": "Entidad financiera",
+        "VALUE": "Valor",
+        "STATE": "Estado"
+      }
+    },
+    "SCHEDULE-TRANFERS": {
+      "TABLE": {
+        "DATE": "Fecha",
+        "PRODUCT-NAME": "Nombre producto",
+        "NAME": "Nombre destinatario",
+        "ENTITIE": "Entidad financiera",
+        "VALUE": "Valor",
+        "STATE": "Estado"
+      },
+      "FILTER": "Destinatario",
+      "FILTER-PLACEHOLDER": "Nombre o nro. identificación"
+    },
+    "DETAIL": {
+      "TITLE": "Detalle de transacción",
+      "TYPE": "Tipo producto",
+      "NUMBER": "Nro. Producto",
+      "DATE": "Fecha transferencia",
+      "TYPE-ID": "Tipo identificación",
+      "ID": "Nro. Identificación",
+      "TYPE-PRODUCT": "Tipo producto destino",
+      "ID-PRODUCT": "Nro. Producto destino",
+      "REFERENCE": "Referencia / No. Factura",
+      "INFO": "Información adicional",
+      "DESC": "Descripción de código de error",
+      "AUTH": "No. Autorización",
+      "DATE-ISSUE": "Fecha de emisión",
+      "EXO": "Exonerar transacción de GMF"
+    },
+    "STEP-NEW-TRANSFER": {
+      "TITLE-1": "Nueva transacción",
+      "TITLE-2": "Resumen transacción",
+      "DISCLAIMER-PART-1": "* La",
+      "DISCLAIMER-PART-2": "tarifa de esta transacción",
+      "DISCLAIMER-PART-3": "depende del acuerdo que tenga establecido con el Banco.",
+      "STEP-ONE": {
+        "HEADER": "Origen",
+        "BOX-CHECK": "Programar transferencia",
+        "LABEL-1": "Tipo de producto",
+        "LABEL-2": "Nombre producto",
+        "TRANSFER-LIST": "Listado de transacciones"
+      },
+      "STEP-TWO": {
+        "HEADER-1": "Destino",
+        "HEADER-2": "Información adicional",
+        "LABEL-2": "Tipo de identificación",
+        "LABEL-1": "Nombre destinatario",
+        "LABEL-3": "Entidad financiera",
+        "LABEL-4": "Tipo producto destino",
+        "LABEL-5": "Nro. Producto destino",
+        "LABEL-6": "Valor",
+        "LABEL-7": "Referencia / No. Factura",
+        "LABEL-8": "Información adicional",
+        "LABEL-9": "No. Identificación",
+        "SEARCH-BUTTON": "Buscar destinatario",
+        "BOX-CHECK": "Exonerar transacción GMF",
+        "LABEL-MODAL": "Destinatarios guardados",
+        "DISCLAIMER": "Al  solicitar la exoneración de la transacción del GMF el titular del producto origen califica y garantiza que tanto la transferencia y los recursos objeto de esta como la cuenta destino, cumplen con los requisitos establecidos en las disposiciones legales para que sean exenta del GMF (Inciso segundo del numeral 14 del articulo 879 del Estatuto Tributario y articulo 20 del  decreto 405 de 200 y normas que las modifiquen o sustituyan), y asume frente al Banco las autoridades correspondientes y terceros, la responsabilidad derivada de la no veracidad, los errores o inexactitudes en esta manifestación. No obstante la solicitud anterior realizada por el Titular del producto origen, si éste no está matriculado por cartera colectiva, el Banco, sin responsabilidad de su parte, afectará la transacción con el GMF.",
+        "PLACEHOLDER-SEARCH": "Nombre o nro. identificación",
+        "TABLE-HEADER": {
+          "LABEL-1": "Nombre destinatario",
+          "LABEL-2": "Tipo Identificación",
+          "LABEL-3": "Nro. Identificación",
+          "LABEL-4": "Entidad financiera",
+          "LABEL-5": "Tipo producto destino",
+          "LABEL-6": "Nro. Producto destino"
+        }
+      },
+      "STEP-THREE": {
+        "ADD-TRANSACTION-BUTTON": "Agregar nueva transacción",
+        "TITLE": "Resumen",
+        "TABLE-HEADER": {
+          "LABEL-1": "Fecha",
+          "LABEL-3": "Nombre destinatario",
+          "LABEL-2": "Nombre producto",
+          "LABEL-4": "Entidad financiera",
+          "LABEL-5": "Valor",
+          "LABEL-6": "Estado"
+        },
+        "TABLE-DETAIL": {
+          "LABEL-1": "Tipo producto",
+          "LABEL-2": "Nro. Producto",
+          "LABEL-3": "Fecha transferencia",
+          "LABEL-4": "Tipo identificación",
+          "LABEL-6": "Tipo producto destino",
+          "LABEL-5": "Nro. Identificación",
+          "LABEL-7": "Nro. Producto destino",
+          "LABEL-8": "Referencia / No. Factura",
+          "LABEL-9": "Información adicional",
+          "LABEL-10": "Descripción de código de error",
+          "LABEL-11": "No. Autorización",
+          "LABEL-12": "Fecha de emisión",
+          "LABEL-13": "Exonerar transacción de GMF"
+        }
+      },
+      "STEP-FINALE": {
+        "HEADER-1": "Origen",
+        "HEADER-2": "Destino",
+        "HEADER-3": "Información adicional",
+        "LABEL-1": "Nro. Autorización",
+        "LABEL-2": "Fecha de emisión",
+        "LABEL-3": "Tipo de producto",
+        "LABEL-5": "Nombre producto",
+        "LABEL-4": "Fecha",
+        "LABEL-6": "Nombre destinatario",
+        "LABEL-7": "Valor",
+        "LABEL-9": "Tipo producto destino",
+        "LABEL-8": "Tipo identificación",
+        "LABEL-10": "No. Identificación",
+        "LABEL-11": "No. Producto destino",
+        "LABEL-12": "Entidad financiera",
+        "LABEL-13": "Referencia / No. Factura",
+        "LABEL-14": "Exonerar transacción de GMF",
+        "LABEL-15": "Información adicional",
+        "ALERT-LABEL-PROGRAMMED": "¡Transacción programada exitosamente!",
+        "ALERT-LABEL-SUCCESS": "¡Transacción ejecutada exitosamente!",
+        "ALERT-LABEL-PENDING": "¡Transacción pendiente de autorización!",
+        "ADVICE-LABEL": "Una vez realizada esta operación, por favor verifique el débito de la cuenta origen, antes de intentar realizarla nuevamente."
+      }
+    },
+    "STEP-TEMPLATES": {
+      "TABLE": {
+        "HEADER-NAME": "Nombre plantilla",
+        "HEADER-DATE": "Fecha creación",
+        "HEADER-USER": "Usuario",
+        "HEADER-USER-NAME": "Nombre usuario",
+        "HEADER-STATUS": "Estado",
+        "HEADER-CAUSE": "Causal de rechazo",
+        "ORDER-DATE": "Ordenar por fecha"
+      },
+      "LABELS": {
+        "NAME": "Nombre de la plantilla",
+        "NAME-PLACEHOLDER": "Escriba el nombre",
+        "SUCCESS": "¡Plantilla creada exitosamente!",
+        "DELETED": "Plantilla eliminada exitosamente",
+        "INPUT-NAME": "Ingrese nombre de la plantilla",
+        "SHARE-1": "Plantillas a compartir",
+        "SHARE-2": "Usuarios a compartir",
+        "SHARE-3": "Plantillas compartidas",
+        "CHANGE-VALUE": "Ingrese nuevo valor",
+        "CHANGE-DATE": "Esta acción modificará la fecha de todas las transacciones del listado"
+      },
+      "BREADCRUMB": {
+        "REUSE": "Reutilizar plantilla",
+        "DUPLICATE": "Duplicar plantilla",
+        "MODIFY": "Modificar plantilla"
+      },
+      "BUTTON": {
+        "CREATE": "Crear nueva plantilla",
+        "CREATE-TEMPLATE": "Crear plantilla",
+        "SHARE": "Compartir plantillas",
+        "CHANGE-VALUE": "Cambiar valor",
+        "CHANGE-DATE": "Cambiar fecha",
+        "SAVE-NEW": "Guardar como nueva"
+      }
+    }
+  }
+}

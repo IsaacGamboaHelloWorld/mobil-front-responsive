@@ -1,0 +1,86 @@
+@import '@/sass/animations.sass'
+@import  '@/sass/mixins.sass'
+
+.container_table,.container_table-responsive
+    .table
+        border-spacing: 0px
+        border: solid 1px $main-color-neutral-light-400
+        border-radius: 6px
+        table-layout: fixed
+        width: 100%
+        &_header
+            background: $main-color-semantic-blue-100
+        &_body
+            >tr
+                background: $main-color-neutral-light-100
+                #container-button
+                    +flex(flex,center, flex-end,row)
+                i
+                    transform: rotate(0deg)
+                    transition: transform linear
+                &.active
+                    background: $main-color-neutral-light-300
+                    i
+                        transform: rotate(180deg)
+                        transition: transform linear
+            .container-dropdown
+                display: none
+                &-active
+                    display: table-row
+                    background: $main-color-neutral-light-200
+                    width: 100%
+                    td
+                        padding: 24px 0px
+                        .container-detail-col
+                            display: flex
+                            flex-direction: column
+                            gap: 12px
+                        .white-space
+                            height: 20px
+                        .container-row
+                            display: flex
+
+                            p
+                                text-overflow: ellipsis
+                                overflow-x: hidden
+                                padding: 0px 16px
+                                width: 50%
+                                white-space: nowrap
+
+    th,tr,td
+        text-align: left
+        border: none
+        padding: 14px 8px
+        text-overflow: ellipsis
+        overflow-x: hidden
+
+.container_table-responsive
+    display: none
+    .headers
+        display: flex
+    .table_body
+        tr
+            .container-icon
+                text-align: right
+                padding: 28px
+                i
+                    &.bpop
+                        color: $bpop-color-primary-300
+                    &.bavv
+                        color: $bavv-color-secondary-500
+                    &.bbog
+                        color: $bbta-color-primary-500
+                    &.bocc
+                        color: $bocc-color-primary-400
+
+                &.active
+                    background: $main-color-neutral-light-300
+        .container-labels
+            &.active
+                background: $main-color-neutral-light-300
+
+@include mobile
+    .container_table
+        display: none
+    .container_table-responsive
+        display: block

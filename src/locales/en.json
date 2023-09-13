@@ -1,0 +1,214 @@
+{
+  "REUSABLES": {
+    "BUTTON": {
+      "GO-BACK": "Go back"
+    }
+  },
+  "AUTH-MODULE": {
+    "SECURITY-CONDITIONS": "the security conditions",
+    "SECURITY-CONDITIONS-BEFORE": "Operating the portal implies accepting",
+    "SECURITY-CONDITIONS-AFTER": " offered by the service.",
+    "ACORDION-TITLE-BUSINESS": "Customer service lines Companies",
+    "ACORDION-TITLE-CUSTOMER": "Financial consumer advocate lines",
+    "OPTION-ES": "Spanish",
+    "OPTION-EN": "English",
+    "STEPS": {
+      "USER-RSA-KEY": {
+        "TITLE": "Welcome to the Business Portal",
+        "INFORMATION": "Please enter your user data",
+        "DESCRIPTION-INPUT": "Enter here the user assigned by the company",
+        "BTN-TITLE": "Continue",
+        "PLACE-HOLDER": "User",
+        "INPUT-LABEL": "User",
+        "EMAIL-TEXT-BEFORE": "Instructions to restore your password have been sent to your email",
+        "EMAIL-TEXT-AFTER": "",
+        "SESSION-CLOSED": "Session has been successfully closed"
+      },
+      "LOGIN": {
+        "TITLE": "Welcome to the Business Portal",
+        "INFORMATION": "Please enter your user data",
+        "LABEL": "User",
+        "DESCRIPTION-INPUT": "Enter here your dynamic key token",
+        "BTN-TITLE": "Continue",
+        "PLACE-HOLDER": "Enter token",
+        "SECOND-BTN-TITLE": "Cancel",
+        "INPUT-LABEL": "Physical token"
+      },
+      "AUTH": {
+        "TITLE": "Verify your information before entering",
+        "LABEL-USER": "User",
+        "LABEL-TOKEN": "Your token number is:",
+        "DESCRIPTION": "If your data or the security image do not correspond, contact the Bank",
+        "BTN-TITLE": "Continue",
+        "SECOND-BTN-TITLE": "Cancel",
+        "PLACE-HOLDER": "Please enter your password",
+        "INPUT-LABEL": "Key",
+        "FORGOT-PASSWORD": "Forgot your password?"
+      },
+      "CHANGE-PASSWORD": {
+        "TITLE": "User Key Management",
+        "LABEL-BEFORE": "Previous key",
+        "LABEL-NEW": "New password",
+        "LABEL-CONFIRMATION-NEW": "Key confirmation",
+        "DESCRIPTION": "Please enter the old password and the new password.",
+        "BTN-TITLE": "Continue",
+        "SECOND-BTN-TITLE": "Cancel",
+        "PLACEHOLDER": "Please enter the temporary password"
+      },
+      "IMAGES": {
+        "HEADER": "Security image configuration",
+        "BODY": "Please choose a category and select an image, this will be your security image.",
+        "DROPDOWN-LABEL": "Select a category, and a single image",
+        "DROPDOWN-PLACEHOLDER": "Select a category",
+        "CONFIRMATION-LABEL-1": "Are you sure to update the security image?",
+        "CONFIRMATION-LABEL-2": "Once updated you will not be able to change the image.",
+        "CONFIRMATION-LABEL-3": "Security image updated successfully",
+        "CONFIRMATION-LABEL-4": "You will be redirected to the home portal",
+        "BUTTON-CHANGE": "Update image"
+      }
+    },
+    "SERVICE-LINES": {
+      "bbog": {
+        "LABEL-1": "Financial Consumer Advocate:",
+        "LABEL-2": "Alvaro Julio Rodríguez Pérez",
+        "LABEL-3": "Alejandro Andrés Gómez Montoya (Alternate)",
+        "LABEL-4": "Address: Cll 36 no. 7 - 47, 5th floor Bogotá D.C.",
+        "LABEL-5": "Tel: 601 3320101",
+        "LABEL-6": "Cel: 318 3730077",
+        "LABEL-7": "Email: defensoriaconsumidorfinanciero{att}bancodebogota.com.co",
+        "LABEL-8": "Schedule: Monday to Friday 8:00 a.m. - 5:30 p.m.",
+        "LABEL-9": "",
+        "LABEL-10": "",
+        "LABEL-11": "",
+        "LABEL-12": "",
+        "LABEL-13": ""
+      },
+      "bpop": {
+        "LABEL-1": "Main Financial Consumer Ombudsman: Darío Laguado Monsalve",
+        "LABEL-2": "Alternate Financial Consumer Ombudsman: Gonzalo Méndez Morales",
+        "LABEL-3": "Address: Calle 70A No. 11 – 83 Bogotá.",
+        "LABEL-4": "Phone: 601 2110351",
+        "LABEL-5": "Cellphone: 3203981187",
+        "LABEL-6": "Email: reclamaciones{att}defensorialg.com.co",
+        "LABEL-7": "Opening hours from 8:30 AM to 12:30 PM and from 2:30 PM to 5:30 PM Monday through Friday.",
+        "LABEL-8": "Entering the website http://www.defensorialg.com.co and clicking on the logo of Banco Popular, fill out the form.",
+        "LABEL-9": "",
+        "LABEL-10": "",
+        "LABEL-11": "",
+        "LABEL-12": "",
+        "LABEL-13": ""
+      },
+      "bocc": {
+        "LABEL-1": "Lina Maria Zorro Ceron y Lorena Cerchar Rosado (suplente)",
+        "LABEL-2": "Dirección Carrera 7 No. 71-52 Torre A Piso 1 Bogotá",
+        "LABEL-3": "Tel. (601) 7462060 Ext. 15318, 15311 Celular 315 5704405 Fax (601) 3121024",
+        "LABEL-4": "defensoriacliente{att}bancodeoccidente.com.co",
+        "LABEL-5": "Lunes a viernes 8:30 a.m. - 5:30 p.m.",
+        "LABEL-6": "",
+        "LABEL-7": "",
+        "LABEL-8": "",
+        "LABEL-9": "",
+        "LABEL-10": "",
+        "LABEL-11": "",
+        "LABEL-12": "",
+        "LABEL-13": ""
+      },
+      "bavv": {
+        "LABEL-1": "Mr. User:",
+        "LABEL-2": "Addressing the Financial Consumer, to file a claim does not require any formality, it is enough to send written communication indicating the reason for the complaint, describing the facts and rights that you consider violated, as well as your identification and other data that allow you to contact the Ombudsman.",
+        "LABEL-3": "Contact details for filing complaints.",
+        "LABEL-4": "ADVOCATE MAJOR: DOCTOR  Patricia Amelia Rojas Amezquita",
+        "LABEL-5": "ADVOCATE ALTERNATE: Doctor Carlos Mario Serna Jaramillo",
+        "LABEL-6": "Emails: defensoria{att}sernarojasasociados.com",
+        "LABEL-7": "physical address: Carrera 16 A No 80-63 oficina 601. Edificio Torre Oval. Bogotá D.C.",
+        "LABEL-8": "opening hours principal:  Lunes a viernes de 8:00 am a 12:30 m y de 2:00 pm a 5:00 pm.",
+        "LABEL-9": "Opening hours phone: Lunes a viernes de 8:00 a.m. a 5:30 p.m. - Buzón 24 horas del día",
+        "LABEL-10": "Option 1: Página principal / Envíe su queja",
+        "LABEL-11": "Option 2: Panel Defensoría / Envíe su reclamación",
+        "LABEL-12": "",
+        "LABEL-13": ""
+      }
+    }
+  },
+  "HOMEFRONT-MODULE": {
+    "HEADER": {
+      "TITLE": "Hello,",
+      "LABEL-COMPANY": "Company:",
+      "LABEL-LOGOUT": "Logout"
+    },
+    "PROFILE-WINDOW": {
+      "COMPANY-LABEL": "Company",
+      "ID-LABEL": "Identification No.",
+      "INTERNAL-ID-LABEL": "Internal identifier",
+      "CURRENT-DATE-LABEL": "Current date",
+      "LAST-LOGIN-LABEL": "Last login",
+      "IP-LABEL": "IP adress",
+      "EDIT-PROFILE-BUTTON-LABEL": "Change key and image"
+    },
+    "NOTIFICATIONS-WINDOW": {
+      "NOTIFICATIONS-LABEL": "Notifications",
+      "PENDING-AUTHORIZATIONS": "Pending authorizations",
+      "NO-NOTIFICATIONS-LABEL": "Has no notifications"
+    },
+    "SERVICE-ITEMS": {
+      "BANK": "My bank",
+      "MOVEMENTS": "Movements",
+      "BALANCES": "Balances by product",
+      "SEARCH": "Inquiries",
+      "TRANSFERS": "Transfers",
+      "AUTHORIZATIONS": "Authorizations",
+      "CONTACT": "Contact Us"
+    }
+  },
+  "MY-BANK-MODULE": {
+    "TITLE": "My bank",
+    "EXPORT-BUTTON": "Export",
+    "SUMMARY-CARDS": {
+      "BUTTON": "View detail",
+      "CURRENT-TITLE": "Current accounts",
+      "SAVING-TITLE": "Savings accounts",
+      "TOTAL-TITLE": "Total products",
+      "AVAILABLE-BALANCE": "Available balance",
+      "REDEMPTION-BALANCE": "Redemption balance",
+      "CURRENT-BALANCE": "Current balance"
+    },
+    "DETAIL": {
+      "TABLE": {
+        "PRODUCT-NAME": "Product name",
+        "AVAILABLE": "Available balance",
+        "TRADE": "Exchange balance",
+        "CURRENT": "Saldo actual",
+        "BUTTON": "View more",
+        "SEARCHER-LABEL": "Look for",
+        "SEARCHER-PLACEHOLDER": "Search by name",
+        "DETAIL": {
+          "DDA-TYPE": "Current account",
+          "SDA-TYPE": "Savings account",
+          "PRODUCT-TYPE": "Product type",
+          "ID": "Product No.",
+          "STATE": "Product status",
+          "YESTERDAY-BALANCE": "Balance yesterday",
+          "REMITTANCES": "Remittances",
+          "OVERDRAFT-DAYS": "Overdraft days",
+          "OVERDRAFT-APPROVED-QUOTE": "Overdraft approved quota",
+          "OVERDRAFT-STATUS": "Overdraft quota status",
+          "OVERDRAFT-AVAILABLE-QUOTE": "Quota available overdraft",
+          "QUOTA-TRADE-APPROVED": "Quota approved exchange",
+          "QUOTA-REMITTANCES-APPROVED": "Approved quota remittances",
+          "PRINT": "Print"
+        }
+      }
+    }
+  },
+
+  "MOVEMENTS-MODULE": {
+    "SEARCH": {
+      "COMPONENT-LABEL": "Select a product and period",
+      "TYPE-LABEL": "Product type",
+      "NAME-LABEL": "Product Name",
+      "PERIOD-LABEL": "Period",
+      "PRODUCT-DROPDOWN-LABEL": "Type or select",
+      "DEFAULT-PRODUCT-LABEL": "Current account"
+    }
+  }
+}

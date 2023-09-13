@@ -1,0 +1,23 @@
+@import '@/sass/mixins.sass'
+
+.container
+    &-main
+        margin: 0px 16px
+    &-header
+        +flex(flex, center, space-between, row)
+        margin: 8px 0px
+    &-body
+        +flex(flex, inherit, inherit, row)
+    &-content
+        +flex(flex, inherit, inherit, row)
+    &-item
+        width: 50%
+hr
+    opacity: 25%
+
+@include mobile
+    .container
+        &-body
+            +flex(flex, inherit, inherit, column)
+        &-item
+            width: 100%

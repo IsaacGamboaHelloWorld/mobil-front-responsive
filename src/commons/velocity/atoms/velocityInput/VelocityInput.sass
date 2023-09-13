@@ -1,0 +1,81 @@
+@import '@/sass/typography.sass'
+
+.container-input
+    .label
+        display: block
+        &.label-error
+            color: $main-color-semantic-red-400
+        &.label-error-bbog
+            color: $bbta-color-semantic-red-300
+        &.label-success
+            color: $main-color-semantic-blue-400
+        &.disabled
+            color: $main-color-neutral-dark-100 !important
+        .pop-up
+            position: relative
+            font-size: 14px
+            .politics
+                position: relative
+                border-radius: 6px
+                background: $main-color-neutral-dark-400
+                color: white
+                padding: 8px
+                white-space: nowrap
+                .arrow
+                    position: absolute
+                    width: 16px
+                    height: 16px
+                    background: $main-color-neutral-dark-400
+                    top: -8px
+                    left: 30px
+                    transform: rotate(45deg)
+
+                ul,li
+                    list-style-type: disc
+    .relative-container
+        position: relative
+        .input
+            outline: none
+            display: block
+            width: 100%
+            padding: 16px
+            background: #FFFFFF
+            border: 1px solid #838F9A
+            border-radius: 6px
+            box-sizing: border-box
+            &-error
+                border-color: $main-color-semantic-red-400
+                .detail
+                    color: $main-color-semantic-red-400 !important
+            &-error-bbog
+                border-color: $bbta-color-semantic-red-300
+                background: $bbta-color-semantic-red-100
+                .detail
+                    color: $main-color-semantic-red-400 !important
+            &-success
+                border: solid 1px $main-color-semantic-blue-400
+                .detail
+                    color: $main-color-semantic-blue-400 !important
+            &:disabled
+                border-color: $main-color-neutral-light-500 !important
+                color: $main-color-neutral-dark-100 !important
+            &.small
+                padding: 9px
+                margin-top: 8px
+                box-sizing: border-box
+
+        i
+            color: $main-color-neutral-dark-300
+            position: absolute
+            right: 16px
+            top: 50%
+            transform: translateY(-50%)
+
+    .detail
+        color: $main-color-neutral-dark-300
+
+    .message
+        &-error
+            color: $main-color-semantic-red-400
+        &-success
+            color: $main-color-semantic-blue-400

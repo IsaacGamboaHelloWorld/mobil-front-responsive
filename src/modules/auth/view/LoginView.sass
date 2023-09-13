@@ -1,0 +1,104 @@
+@import '@/sass/mixins.sass'
+@import '@/sass/typography.sass'
+
+.container
+    width: 100%
+    min-height: 100vh !important
+    +flex()
+    &-left
+        width: 50%
+        padding-top: 48px
+        position: relative
+        +flex(flex,space-between,space-between,column)
+        .language
+            position: absolute
+            width: 94px
+            right: 24px
+            top: 39px
+            z-index: 2
+            box-sizing: border-box !important
+            select
+                padding: 7.5px 14px
+                border-radius: 4px
+                background: $main-color-neutral-light-100
+                border: 1px solid $main-color-neutral-light-500
+                box-sizing: border-box !important
+                margin-bottom: 9px
+                option
+                    padding: 7.5px 14px
+            >p
+                white-space: nowrap
+                text-overflow: ellipsis
+        .container-information
+            margin: 0px auto
+            width: 67%
+            .container-img
+                text-align: center
+                img
+                    width: 200px
+        .container-terms
+            margin: 0px auto
+            width: 100%
+
+            >.velocity-accordion,p
+                max-width: 67%
+                margin: auto
+            hr
+                height: 1px
+                background-color: $main-color-neutral-light-300
+                border: nonez
+
+    &-right
+        max-width: 50%
+        min-width: 50%
+        min-height: 100vh
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+
+        .info
+            background: linear-gradient(180deg, rgba(37, 43, 49, 0) 0%, #252B31 100%)
+            +flex(flex,flex-end,space-between,row)
+            height: 100%
+            padding: 24px
+            box-sizing: border-box
+
+            p
+                color: white
+            .container-images
+                .img-aval
+                    width: 109px
+                .img-super
+                    width: 14px
+
+        &.bpop
+            background-image: url('/bpop/login-img.webp')
+        &.bavv
+            background-image: url('/bavv/login-img.webp')
+        &.bbog
+            background-image: url('/bbog/login-img.webp')
+        &.bocc
+            background-image: url('/bocc/login-img.webp')
+
+@include mobile
+    .container-right
+        display: none
+    .container-left
+        width: 100%
+        .container-information
+            width: 90%
+            .container-img
+                text-align: left
+
+        .container-terms
+            >.velocity-accordion,p
+                max-width: 90%
+
+@include tablet
+    .container-left
+        .container-information
+            width: 90%
+            .container-img
+                text-align: left
+                img
+                    width: 150px !important

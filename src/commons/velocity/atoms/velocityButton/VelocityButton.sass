@@ -1,0 +1,290 @@
+@import '@/sass/typography.sass'
+@import '@/sass/mixins.sass'
+
+.container-button
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    @media print
+        display: none
+
+.btn
+    transition: .3s
+    cursor: pointer
+    user-select: none
+    outline: none
+    letter-spacing: normal
+    border: none
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+
+    &-primary
+        &.bpop
+            background-color: $bpop-color-primary-300
+            border-radius: 6px
+            color: $bpop-color-neutral-light-100
+            &:hover:enabled
+                background-color: $bpop-color-primary-200
+                border: 1px solid $bpop-color-primary-400
+            &:active:enabled
+                background-color: $bpop-color-primary-400
+            &:disabled
+                background-color: $bpop-color-neutral-dark-200
+                color: $bpop-color-neutral-light-100
+                cursor: inherit
+                border: none
+
+        &.bavv
+            background-color: $bavv-color-secondary-500
+            border-radius: 100px
+            color: $bavv-color-neutral-light-100
+            &:hover:enabled
+                background-color: $bavv-color-secondary-300
+            &:active:enabled
+                background-color: $bavv-color-secondary-400
+            &:disabled
+                background-color: $bavv-color-neutral-dark-200
+                color: $bavv-color-neutral-light-100
+                cursor: inherit
+                border: none
+        &.bbog
+            background-color: $bbta-color-primary-400
+            border-radius: 16px
+            color: $bbta-color-neutral-light-100
+            &:hover:enabled
+                background-color: $bbta-color-primary-500
+            &:active:enabled
+                background-color: $bbta-color-primary-500
+            &:disabled
+                background-color: $bbta-color-neutral-light-300
+                color: $bbta-color-neutral-light-100
+                cursor: inherit
+                border: none
+
+        &.bocc
+            background-color: $bocc-color-primary-400
+            border-radius: 6px
+            color: $bocc-color-neutral-light-100
+            &:hover:enabled
+                background-color: $bocc-color-primary-300
+                border: 1px solid $bocc-color-primary-500
+            &:active:enabled
+                background-color: $bocc-color-primary-500
+            &:disabled
+                background-color: $bocc-color-neutral-dark-200
+                color: $bocc-color-neutral-light-100
+                cursor: inherit
+                border: none
+
+    &-secundary
+        &.bpop
+            background-color: $bpop-color-primary-100
+            border-radius: 6px
+            color: $bpop-color-primary-400
+            &:hover:enabled
+                background-color: $bpop-color-primary-200
+                border: 1px solid $bpop-color-primary-400
+                color: white
+            &:active:enabled
+                background-color: $bpop-color-primary-400
+            &:disabled
+                background-color: $bpop-color-neutral-dark-200
+                color: $bpop-color-neutral-light-100
+                cursor: inherit
+                border: none
+        &.bavv
+            background-color: $bavv-color-neutral-light-100
+            border-radius: 100px
+            border: 1px solid $bavv-color-secondary-500
+            color: $bavv-color-secondary-500
+            &:hover:enabled
+                background-color: $bavv-color-secondary-100
+            &:active:enabled
+                background-color: $bavv-color-secondary-200
+            &:disabled
+                background-color: $bavv-color-neutral-light-100
+                color: $bavv-color-neutral-dark-200
+                cursor: inherit
+                border: 1px solid $bavv-color-neutral-dark-200
+        &.bbog
+            background-color: $bbta-color-neutral-light-100
+            border-radius: 16px
+            border: 1px solid $bbta-color-primary-400
+            color: $bbta-color-primary-400
+            &:hover:enabled
+                background-color: $bbta-color-primary-200
+            &:active:enabled
+                background-color: $bbta-color-primary-200
+                color: $bbta-color-primary-500
+                border: 2px solid $bbta-color-primary-500
+            &:disabled
+                background-color: $bbta-color-neutral-light-100
+                color: $bbta-color-neutral-dark-200
+                cursor: inherit
+                border: 1px solid $bbta-color-neutral-dark-200
+
+        &.bocc
+            background-color: $bocc-color-neutral-light-100
+            border-radius: 6px
+            border: 1px solid $bocc-color-primary-500
+            color: $bocc-color-neutral-dark-300
+            &:hover:enabled
+                background-color: $bocc-color-primary-200
+            &:active:enabled
+                background-color: $bocc-color-primary-400
+                color: $bocc-color-neutral-light-100
+            &:disabled
+                background-color: none
+                color: $bocc-color-neutral-dark-200
+                cursor: inherit
+                border: 1px solid $bocc-color-neutral-dark-200
+.text
+    width: 100%
+    transition: .3s
+    cursor: pointer
+    user-select: none
+    outline: none
+    letter-spacing: normal
+    border: none
+    background: none
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    white-space: nowrap
+    >i
+        font-size: 15px
+    &-primary
+        &.bpop
+            color: $bpop-color-secondary-300
+            &:hover
+                color: $bpop-color-secondary-200
+            &:active
+                color: $bpop-color-secondary-400
+            &:disabled
+                color: $bpop-color-neutral-dark-200
+        &.bavv
+            color: $bavv-color-secondary-500
+            &:hover
+                color: $bavv-color-secondary-300
+            &:active
+                color: $bavv-color-secondary-400
+            &:disabled
+                color: $bavv-color-neutral-dark-200
+
+        &.bocc
+            color: $bocc-color-primary-400
+            &:hover
+                color: $bocc-color-primary-300
+            &:active
+                color: $bocc-color-primary-500
+            &:disabled
+                color: $bocc-color-neutral-dark-200
+        &.bbog
+            color: $bbta-color-primary-400
+            &:hover:enabled
+                color: $bbta-color-primary-500
+            &:active
+                color: $bbta-color-primary-500
+            &:disabled
+                color: $bbta-color-neutral-dark-100
+
+        // &.bbog
+        //     background-color: $bbta-color-secondary-200
+        //     border-radius: 16px
+        //     color: $bbta-color-primary-400
+        //     &:hover:enabled
+        //         background-color: $bbta-color-secondary-100
+        //     &:active:enabled
+        //         color: $bbta-color-neutral-light-100
+        //         background-color: $bbta-color-secondary-300
+        //     &:disabled
+        //         background-color: $bbta-color-neutral-light-100
+        //         color: $bbta-color-neutral-dark-200
+        //         cursor: inherit
+        //         border: 1px solid $bbta-color-neutral-dark-200
+
+    &-secondary
+        &.bpop
+            color: $bpop-color-primary-300
+            &:hover
+                color: $bpop-color-primary-200
+            &:active
+                color: $bpop-color-primary-400
+            &:disabled
+                color: $bpop-color-neutral-dark-200
+        &.bavv
+            color: $bavv-color-secondary-500
+            &:hover
+                background-color: $bavv-color-secondary-300
+            &:active
+                background-color: $bavv-color-secondary-400
+            &:disabled
+                background-color: $bavv-color-neutral-dark-200
+        &.bocc
+            color: $bocc-color-primary-400
+            &:hover
+                color: $bocc-color-secondary-300
+            &:active
+                color: $bocc-color-secondary-500
+            &:disabled
+                color: $bocc-color-neutral-dark-200
+        &.bbog
+            color: $bbta-color-primary-400
+            &:hover:enabled
+                color: $bbta-color-primary-500
+            &:active
+                color: $bbta-color-primary-500
+            &:disabled
+                color: $bbta-color-neutral-dark-100
+
+.large
+    @extend .vel-text-body-1
+    padding: 16px
+.medium
+    @extend .vel-text-body-2
+    padding: 12px 16px
+.small
+    @extend .vel-text-small
+    padding: 8px 12px
+
+.default
+    @extend .vel-text-small
+    padding: 0px
+
+.text-medium
+    @extend .vel-text-body-2
+    padding: 0px
+
+.selector
+    z-index: 2
+    border: 1px solid $main-color-neutral-dark-200
+    border-radius: 6px
+    position: absolute
+    padding: 16px 0px
+    color: $main-color-neutral-dark-200
+    background: $main-color-neutral-light-100
+    width: 100%
+    height: auto
+
+    &.up
+        bottom: 50px
+        left: 0
+
+    &.down
+        top: 50px
+        left: 0
+    li
+        padding: 10px 16px
+        &:hover
+            background: $main-color-semantic-green-100
+            cursor: pointer
+    @media print
+        display: none
+
+@include mobile
+    .hide-text
+        display: none

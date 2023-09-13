@@ -1,0 +1,47 @@
+@import '@/sass/mixins.sass'
+
+.section-home
+    position: relative
+    height: 100vh !important
+    overflow-y: hidden
+    .overlay
+        display: none
+    .section-main
+        overflow-y: scroll !important
+        box-sizing: border-box
+        height: calc( 100vh - 79px )
+        position: relative
+        left: 122px
+        top: 80px
+        // pantalla - left nav - side right with buttons
+        width: calc( 100% - 122px - 78px)
+        padding: 25px !important
+        background: $main-color-neutral-light-200
+        @media print
+            left: 0
+            top: 0
+            width: 100vw
+            height: 100vh
+
+    .nav
+        display: flex
+
+@include tablet
+    .section-home
+        .section-main
+            left: 110px
+@include mobile
+    .section-home
+        .nav
+            display: none
+            &.active
+                display: flex
+        .overlay
+            display: none
+            &.active
+                display: flex
+        .section-main
+            left: 0px
+            width: 100%
+            top: 121px
+            height: calc( 100vh - 150px )

@@ -1,0 +1,104 @@
+@import '@/sass/mixins.sass'
+.section-nav
+    border-right: 1px solid $main-color-neutral-light-400
+    position: absolute
+    top: 0px
+    left: 0px
+    background: $main-color-neutral-light-100
+    height: 100%
+    width: 122px
+    z-index: 2
+    height: 100vh !important
+    box-sizing: border-box
+    +flex(flex,center,space-between,column)
+
+    @media print
+        display: none
+
+    .container
+        &_services
+            +flex(flex,inherit,inherit,column)
+            gap: 16px
+            >ul
+                +flex(flex,inherit,inherit,column)
+                gap: 16px
+
+            &-childs
+                display: none
+                padding: 16px
+                width: 188px
+                height: 100vh
+                position: absolute
+                top: 0
+                left: 122px
+                background: $main-color-neutral-light-200
+                p:hover
+                    cursor: pointer
+                &.active
+                    display: block
+
+        &_logo
+            height: 7%
+            width: 100%
+            +flex(flex,center,center,column)
+            img
+                width: 61.64px
+        &_main_logo
+            border-bottom: solid 1px $main-color-neutral-light-400
+            +flex(flex,center,center)
+            height: 78px
+            position: relative
+            i
+                display: none
+            img
+                width: 56px
+                height: 56px
+            .logo-responsive
+                display: none
+@include tablet
+    .section-nav
+        width: 110px
+    .container_services-childs
+        left: 110px !important
+
+@include mobile
+    .section-nav
+        width: 75%
+        padding: 16px
+        .container
+            &_main_logo
+                border: none
+                img
+                    display: none
+                i
+                    display: inline
+                    position: absolute
+                    left: 0px
+                .logo-responsive
+                    display: block
+                    width: 70%
+
+            &_services
+                width: 100%
+                box-sizing: border-box
+                ul
+                    li
+                        margin: 0px
+                &-childs
+                    background: none
+                    padding: 0px
+                    position: relative
+                    top: 0
+                    left: 42px
+                    height: auto
+                    width: calc( 100% - 42px)
+                    p
+                        font-weight: 400
+
+            &_logo
+                +flex(flex,flex-start,center,column)
+
+                img
+                    width: 108.6px
+                    margin-left: 28px
+                    margin-bottom: 55px

@@ -1,0 +1,42 @@
+@import '@/sass/mixins.sass'
+
+.container
+    &-head
+        +flex(flex, center, space-between, row)
+        gap: 16px
+    &-detail
+        +flex(flex, inherit, inherit, row)
+        gap: 16px
+        .row
+            +flex(flex, inherit, inherit, row)
+            padding: 0px
+            width: 100%
+            margin-bottom: 12px
+.vel-table_detail
+    padding: 16px
+    .detail
+        margin-bottom: 16px
+.subtitle
+    color: $main-color-neutral-dark-300
+
+@include mobile
+    .container
+        &-head
+            flex-direction: column
+            .button
+                width: 100%
+            .product-name
+                width: 100%
+        &-detail
+            flex-direction: column
+            width: 100%
+    .vel-table_detail
+        padding: 12px
+    .detail
+        margin-bottom: 12px
+
+@include tablet
+    .vel-table_detail
+        padding: 12px
+        .detail
+            margin-bottom: 12px
