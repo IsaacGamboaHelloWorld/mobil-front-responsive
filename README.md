@@ -36,29 +36,6 @@ Estas son necesarias para algunos comandos necesarios al momento de hacer el pip
 
 - vite/plugin-vue (V4.2.2) - [oficial plugins for Vite](https://vitejs.dev/plugins/) Es necesario para la compatibiliad con Vue y configuraciones de compilacion
 
-#### Generar Artefacto y Compilacion
-
-Para la compilacion o comando de construccion de los diferentes modos en el proyecto se sigue la siguiente estructura:
-
-`npm run build-{ambiente}-{banco}`
-Los valores posibles para banco son: bpop,bavv,bocc y bbog.
-
-Los diferentes ambientes con su codigo correspondiente para el comando anterior son:
-
-- **Ambiente G3 :** g3
-- **Ambiente G2 :** g2
-- **Ambiente QA de Ginko :** qaGinko
-- **Ambiente QA de ATH :** qa
-- **Ambiente Produccion:** prod
-- **Local:** no se requiere codigo
-
-Algunos ejemplos:
-
-- artefacto para Banco Popular apuntando al ambiente de qa ATH: `npm run build-qa-bpop`
-- artefacto para Banco del Occidente apuntando a ambiente G3 de ATH: `npm run build-g3-bocc`
-
-5. podra observar una carpeta 'dist' en la raiz del proyecto donde estara el artefacto ta construido
-
 #### Pruebas unitarias y coverage
 
 test unitarias - `npm run test:unit `
